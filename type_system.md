@@ -49,8 +49,6 @@ func(a, b) c
 
 ### Arrays
 
-- Lazy?
-
 ```
 []a
 ```
