@@ -33,6 +33,6 @@ struct Os {
   openFile: func(string, FileMode) !File
   readFile: func(File) !string
   writeFile: func(File, string) !
-  ... ,
+  ...
 }
 ```
