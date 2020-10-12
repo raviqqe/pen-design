@@ -9,7 +9,7 @@ record Foo {
 ```
 
 ```
-enum Foo {
+union Foo {
   Bar
   ...
 }

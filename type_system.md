@@ -81,10 +81,10 @@ person{name: "foo", age: 42}
 person{...p, name: "bar"}
 ```
 
-### Enum types
+### Union types
 
 ```
-enum foo {
+union foo {
   foo(bar)
   baz
 }
@@ -136,7 +136,7 @@ if true {
 
 ### Switch statement
 
-#### Enum matching
+#### Union matching
 
 ```
 switch x {
