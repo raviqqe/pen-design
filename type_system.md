@@ -36,8 +36,8 @@ any
 ### Error
 
 ```
-enum error {
-  error(any)
+struct error {
+  source: any
 }
 ```
 
