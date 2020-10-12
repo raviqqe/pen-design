@@ -3,7 +3,7 @@
 ## Exporting variables and types
 
 ```
-struct Foo {
+record Foo {
   ...
 }
 ```
@@ -41,7 +41,7 @@ func bar() {
 ```
 import foo "github.com/pen-lang/foo/foo"
 
-struct baz {
+record baz {
   foo: foo.Foo
 }
 

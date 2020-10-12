@@ -26,7 +26,7 @@ func main(os Os) ! {
 ### OS type
 
 ```
-struct Os {
+record Os {
   arguments: []string
   environmentVariables: []string
 

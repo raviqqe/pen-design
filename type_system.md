@@ -36,7 +36,7 @@ any
 ### Error
 
 ```
-struct error {
+record error {
   source: any
 }
 ```
@@ -62,12 +62,12 @@ func(a, b) c
 [x, ...xs]
 ```
 
-### Struct types
+### Record types
 
 - Elements are private outside modules.
 
 ```
-struct person {
+record person {
   name string
   age  number
 }
