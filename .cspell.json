@@ -7,7 +7,6 @@
     "llvm",
     "mlsub",
     "stateful",
-    "struct",
     "subtyped",
     "subtyping"
   ]
