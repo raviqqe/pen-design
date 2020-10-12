@@ -3,37 +3,49 @@
 ## Exporting variables and types
 
 ```
-export { Foo, foo }
+struct Foo {
+  ...
+}
+```
 
-type Foo { foo : Number }
+```
+enum Foo {
+  Bar
+  ...
+}
+```
 
-foo : Number -> Number
-foo x = x
+```
+func Foo() {
+  ...
+}
 ```
 
 ## Importing modules
 
 ```
-import "github.com/ein-lang/foo/Foo"
+import "github.com/ein-lang/foo/foo"
 
-type Bar { foo : Foo.Foo }
-
-bar : Number -> Number
-bar x = Foo.foo x
+func bar() {
+  Foo()
+}
 ```
 
 ### Referencing
 
 - A repository name + a module name
-  - e.g. `github.com/ein-lang/foo/Foo/Bar` for a file named `Bar.ein` in a `Foo` directory in a repository of `github.com/ein-lang/foo`
+  - e.g. `github.com/ein-lang/foo/foo/bar` for a file named `bar.pen` in a `foo` directory in a repository of `github.com/ein-lang/foo`
 
-### Aliasing
+### Qualification
 
 ```
-import F "github.com/ein-lang/foo/Foo"
+import foo "github.com/ein-lang/foo/foo"
 
-type Bar { foo : F.Foo }
+struct baz {
+  foo: foo.Foo
+}
 
-bar : Number -> Number
-bar x = F.foo x
+func blah() {
+  foo.Bar()
+}
 ```
