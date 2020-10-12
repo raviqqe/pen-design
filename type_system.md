@@ -117,7 +117,7 @@ lambda(x boolean, y number) string {
 - Variables of the same names in functions are overwritten.
 
 ```
-foo = 42
+foo = ...
 ```
 
 ### If statement

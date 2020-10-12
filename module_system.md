@@ -2,6 +2,8 @@
 
 ## Exporting variables and types
 
+- Capitalize the first letters.
+
 ```
 record Foo {
   ...
@@ -16,9 +18,7 @@ union Foo {
 ```
 
 ```
-func Foo() {
-  ...
-}
+Foo = ...
 ```
 
 ## Importing modules
