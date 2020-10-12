@@ -9,7 +9,7 @@
 ### Primitives
 
 ```
-bool
+boolean
 none
 number
 string
@@ -107,7 +107,7 @@ enum foo {
 ### Function definition
 
 ```
-func foo(x bool, y number) string {
+func foo(x boolean, y number) string {
   return "hello"
 }
 ```
