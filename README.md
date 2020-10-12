@@ -1,4 +1,4 @@
-# The design of Ein programming language
+# The design of Pen programming language
 
 - [Type system](type_system.md)
 - [Effect system](effect_system.md)
@@ -18,9 +18,7 @@ Make software development easier and faster!
 - Simple
   - Easy to learn
 - Testable
-  - Functional
   - Deterministic
-  - Strict evaluation
   - Dependency injection
 - Guided
   - Statically typed
