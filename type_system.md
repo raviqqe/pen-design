@@ -49,6 +49,8 @@ func(a, b) c
 
 ### Lists
 
+- Lazy?
+
 ```
 []a
 ```
