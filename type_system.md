@@ -63,9 +63,9 @@ person{ ...p, name: "bar" }
 ### Unions
 
 ```
-enum maybePerson {
-  some(person)
-  none
+enum foo {
+  foo(bar)
+  baz
 }
 ```
 
