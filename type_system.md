@@ -96,28 +96,10 @@ enum foo {
 ?person
 ```
 
-#### Implementation
-
-```
-enum option<a> {
-  some(a)
-  none(none)
-}
-```
-
 ### Results
 
 ```
 !person
-```
-
-#### Implementation
-
-```
-enum result<a> {
-  ok(a)
-  error(error)
-}
 ```
 
 ## Statements
@@ -163,7 +145,7 @@ default
 }
 ```
 
-#### Any type matching
+#### Any/option/result type matching
 
 ```
 switch type x {
