@@ -1,67 +1,99 @@
 # Type system
 
 - Nominal typing
-- Generics
+- No polymorphism
 
 ## Types
 
 ### Primitives
 
 ```
-Number
-String
+boolean
+number
+string
 ```
 
 #### Literals
 
 ```
+false
+true
 -12.3
-"String"
+"string"
 ```
 
 ### Functions
 
 ```
-a -> b
+(a, b) c
 ```
 
 ### Lists
 
 ```
-[a]
+[]a
 ```
 
 #### Literals
 
 ```
-[ 1, 2, 3 ]
+[1, 2, 3]
 ```
 
-### Records
+### Struct types
 
 - Elements are private outside modules.
 
 ```
-type Person {
-  name : String,
-  age : Number,
+struct person {
+  name string
+  age  number
 }
 ```
 
 #### Operations
 
 ```
-Person.name person
-Person{ name = "foo", age = 42 }
-Person{ ...person, name = "bar" }
+p.name
+person{ name: "foo", age: 42 }
+person{ ...p, name: "bar" }
 ```
 
 ### Unions
 
 ```
-type Maybe a =
-    Just a
-  | None
+enum maybePerson {
+  some(person)
+  none
+}
+```
+
+### Options
+
+```
+?person
+```
+
+### Results
+
+```
+!person
+```
+
+## Statements
+
+### Function definition
+
+```
+foo(x boolean, y number) string {
+  return "hello"
+}
+```
+
+### Variable definitions
+
+```
+foo = 42
 ```
 
 ## Expressions
@@ -69,24 +101,37 @@ type Maybe a =
 ### If expressions
 
 ```
-if True then 42 else 13
+if true {
+  ...
+} else if false {
+  ...
+} else {
+  ...
+}
 ```
 
-### Case expressions
-
-- Arguments are union types.
+#### Enum matching
 
 ```
-case x
-  Person person => ...
-  Number number => ...
-  else => ...
+if enum some(p) = x {
+  ...
+}
 ```
 
-#### Lists
+### For loop
+
+#### Conditional
 
 ```
-case xs
-  [] => ...
-  [ x, ...xs ] => ...
+for true {
+  ...
+}
+```
+
+#### Iterative
+
+```
+for x in xs {
+  ...
+}
 ```
