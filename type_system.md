@@ -132,7 +132,7 @@ if true {
 }
 ```
 
-#### Enum type matching
+#### Enum matching
 
 ```
 switch x {
@@ -145,7 +145,9 @@ default
 }
 ```
 
-#### Any/option/result type matching
+#### Type matching
+
+- For any, option and result types
 
 ```
 switch type x {
