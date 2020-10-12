@@ -10,6 +10,7 @@
 
 ```
 bool
+none
 number
 string
 ```
@@ -19,6 +20,7 @@ string
 ```
 false
 true
+none
 -12.3
 "string"
 ```
@@ -75,10 +77,28 @@ enum foo {
 ?person
 ```
 
+#### Implementation
+
+```
+enum option<a> {
+  some(a)
+  none(none)
+}
+```
+
 ### Results
 
 ```
 !person
+```
+
+#### Implementation
+
+```
+enum result<a> {
+  ok(a)
+  error(error)
+}
 ```
 
 ## Statements
