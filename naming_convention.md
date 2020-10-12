@@ -1,25 +1,20 @@
 # Naming convention
 
-- Camel case
 - Acronyms are considered as single words.
   - e.g. `Llvm`, `Ast`, etc.
 
-## Types
+## Variables and types
 
-- `Foo`
-- `BarBaz`
-
-## Variables
-
-- `foo`
-- `barBaz`
+- Lower or upper camel case
+  - `fooBar`
+  - `FooBar`
 
 ## Modules
 
-- `Foo`
-- `BarBaz`
+- Snake case
+  - `foo_bar`
 
 ## Packages
 
-- `github.com/pen-lang/foo`
-- `github.com/foo/bar`
+- Kebab case
+  - `github.com/foo-bar/baz-blah`
