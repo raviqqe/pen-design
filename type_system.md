@@ -153,7 +153,7 @@ if true {
 #### Enum type matching
 
 ```
-if enum some(p) = x {
+if match some(p) = x {
   ...
 }
 ```
@@ -161,7 +161,7 @@ if enum some(p) = x {
 #### Any type matching
 
 ```
-if any number(x) = x {
+if match x number = x {
   ...
 }
 ```
