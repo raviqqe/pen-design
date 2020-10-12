@@ -112,7 +112,7 @@ func foo(x bool, y number) string {
 }
 ```
 
-### Variable definitions
+### Variable definition
 
 - Variables of the same names in functions are overwritten.
 
