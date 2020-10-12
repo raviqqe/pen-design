@@ -24,7 +24,7 @@ func Foo() {
 ## Importing modules
 
 ```
-import "github.com/ein-lang/foo/foo"
+import "github.com/pen-lang/foo/foo"
 
 func bar() {
   Foo()
@@ -34,12 +34,12 @@ func bar() {
 ### Referencing
 
 - A repository name + a module name
-  - e.g. `github.com/ein-lang/foo/foo/bar` for a file named `bar.pen` in a `foo` directory in a repository of `github.com/ein-lang/foo`
+  - e.g. `github.com/pen-lang/foo/foo/bar` for a file named `bar.pen` in a `foo` directory in a repository of `github.com/pen-lang/foo`
 
 ### Qualification
 
 ```
-import foo "github.com/ein-lang/foo/foo"
+import foo "github.com/pen-lang/foo/foo"
 
 struct baz {
   foo: foo.Foo
