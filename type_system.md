@@ -36,8 +36,8 @@ any
 ### Error
 
 ```
-struct error {
-  reason: any
+enum error {
+  error(any)
 }
 ```
 
@@ -153,7 +153,12 @@ if true {
 #### Enum type matching
 
 ```
-if match some(p) = x {
+switch x {
+case foo(x)
+  ...
+case bar(x)
+  ...
+default
   ...
 }
 ```
@@ -161,7 +166,12 @@ if match some(p) = x {
 #### Any type matching
 
 ```
-if match x number = x {
+switch type x {
+case number
+  ...
+case string
+  ...
+default
   ...
 }
 ```
