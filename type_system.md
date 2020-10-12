@@ -2,6 +2,7 @@
 
 - Nominal typing
 - No polymorphism
+- Bidirectional type inference
 
 ## Types
 
