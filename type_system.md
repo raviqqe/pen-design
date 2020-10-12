@@ -25,6 +25,22 @@ none
 "string"
 ```
 
+### Any
+
+- The top type
+
+```
+any
+```
+
+### Error
+
+```
+struct error {
+  reason: any
+}
+```
+
 ### Functions
 
 ```
@@ -41,6 +57,7 @@ func(a, b) c
 
 ```
 [1, 2, 3]
+[x, ...xs]
 ```
 
 ### Struct types
