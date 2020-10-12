@@ -9,7 +9,7 @@
 ### Primitives
 
 ```
-boolean
+bool
 number
 string
 ```
@@ -26,7 +26,7 @@ true
 ### Functions
 
 ```
-(a, b) c
+func(a, b) c
 ```
 
 ### Lists
@@ -86,7 +86,7 @@ enum maybePerson {
 ### Function definition
 
 ```
-foo(x boolean, y number) string {
+func foo(x bool, y number) string {
   return "hello"
 }
 ```
