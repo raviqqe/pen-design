@@ -47,7 +47,7 @@ struct error {
 func(a, b) c
 ```
 
-### Lists
+### Arrays
 
 - Lazy?
 
