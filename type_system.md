@@ -118,9 +118,7 @@ func foo(x bool, y number) string {
 foo = 42
 ```
 
-## Expressions
-
-### If expressions
+### If statement
 
 ```
 if true {
@@ -131,6 +129,8 @@ if true {
   ...
 }
 ```
+
+### Switch statement
 
 #### Enum matching
 
