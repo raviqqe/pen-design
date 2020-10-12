@@ -150,10 +150,18 @@ if true {
 }
 ```
 
-#### Enum matching
+#### Enum type matching
 
 ```
 if enum some(p) = x {
+  ...
+}
+```
+
+#### Any type matching
+
+```
+if any number(x) = x {
   ...
 }
 ```
