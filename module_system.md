@@ -1,6 +1,6 @@
 # Module system
 
-## Exporting variables and types
+## Export
 
 - Capitalize the first letters.
 
@@ -21,7 +21,7 @@ union Foo {
 Foo = ...
 ```
 
-## Importing modules
+## Import
 
 ```
 import "github.com/pen-lang/foo/foo"
