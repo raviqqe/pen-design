@@ -18,20 +18,21 @@
 ## Main functions
 
 ```
-main : Os -> None | Error
-main os = ...
+func main(os Os) ! {
+  ...
+}
 ```
 
 ### OS type
 
 ```
-type Os {
-  arguments : List String,
-  environmentVariables : List String,
+struct Os {
+  arguments: []string
+  environmentVariables: []string
 
-  openFile : String -> FileMode -> File | Error,
-  readFile : File -> String | Error,
-  writeFile : File -> String -> None | Error,
-  ... ,
+  openFile: func(string, FileMode) !File
+  readFile: func(File) !string
+  writeFile: func(File, string) !
+  ...
 }
 ```

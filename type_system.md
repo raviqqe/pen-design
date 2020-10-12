@@ -1,67 +1,139 @@
 # Type system
 
 - Nominal typing
-- Generics
+- No polymorphism
+- Bidirectional type inference
 
 ## Types
 
 ### Primitives
 
 ```
-Number
-String
+bool
+none
+number
+string
 ```
 
 #### Literals
 
 ```
+false
+true
+none
 -12.3
-"String"
+"string"
+```
+
+### Any
+
+- The top type
+
+```
+any
+```
+
+### Error
+
+```
+struct error {
+  source: any
+}
 ```
 
 ### Functions
 
 ```
-a -> b
+func(a, b) c
 ```
 
 ### Lists
 
+- Lazy?
+
 ```
-[a]
+[]a
 ```
 
 #### Literals
 
 ```
-[ 1, 2, 3 ]
+[1, 2, 3]
+[x, ...xs]
 ```
 
-### Records
+### Struct types
 
 - Elements are private outside modules.
 
 ```
-type Person {
-  name : String,
-  age : Number,
+struct person {
+  name string
+  age  number
 }
 ```
 
 #### Operations
 
 ```
-Person.name person
-Person{ name = "foo", age = 42 }
-Person{ ...person, name = "bar" }
+p.name
+person{ name: "foo", age: 42 }
+person{ ...p, name: "bar" }
 ```
 
 ### Unions
 
 ```
-type Maybe a =
-    Just a
-  | None
+enum foo {
+  foo(bar)
+  baz
+}
+```
+
+### Options
+
+```
+?person
+```
+
+#### Implementation
+
+```
+enum option<a> {
+  some(a)
+  none(none)
+}
+```
+
+### Results
+
+```
+!person
+```
+
+#### Implementation
+
+```
+enum result<a> {
+  ok(a)
+  error(error)
+}
+```
+
+## Statements
+
+### Function definition
+
+```
+func foo(x bool, y number) string {
+  return "hello"
+}
+```
+
+### Variable definitions
+
+```
+foo = 42
 ```
 
 ## Expressions
@@ -69,24 +141,55 @@ type Maybe a =
 ### If expressions
 
 ```
-if True then 42 else 13
+if true {
+  ...
+} else if false {
+  ...
+} else {
+  ...
+}
 ```
 
-### Case expressions
-
-- Arguments are union types.
+#### Enum type matching
 
 ```
-case x
-  Person person => ...
-  Number number => ...
-  else => ...
+switch x {
+case foo(x)
+  ...
+case bar(x)
+  ...
+default
+  ...
+}
 ```
 
-#### Lists
+#### Any type matching
 
 ```
-case xs
-  [] => ...
-  [ x, ...xs ] => ...
+switch type x {
+case number
+  ...
+case string
+  ...
+default
+  ...
+}
+```
+
+### For loop
+
+#### Conditional
+
+```
+for true {
+  ...
+}
+```
+
+#### Iterative
+
+```
+for x in xs {
+  ...
+}
 ```
