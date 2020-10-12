@@ -160,7 +160,7 @@ default
 }
 ```
 
-### For loop
+### For statement
 
 #### Conditional
 
