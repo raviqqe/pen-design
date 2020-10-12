@@ -62,7 +62,7 @@ func(a, b) c
 
 ### Record types
 
-- Elements are private outside modules.
+- Fields are private outside modules.
 
 ```
 record person {
