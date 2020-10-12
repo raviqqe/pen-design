@@ -114,6 +114,8 @@ func foo(x bool, y number) string {
 
 ### Variable definitions
 
+- Variables of the same names in functions are overwritten.
+
 ```
 foo = 42
 ```
