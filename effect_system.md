@@ -27,8 +27,8 @@ func main(os Os) ! {
 
 ```
 struct Os {
-  arguments: []string,
-  environmentVariables: []string,
+  arguments: []string
+  environmentVariables: []string
 
   openFile: func(string, FileMode) !File
   readFile: func(File) !string
