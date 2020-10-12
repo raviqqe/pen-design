@@ -102,15 +102,17 @@ enum foo {
 !person
 ```
 
-## Statements
+## Expressions
 
-### Function definition
+### Lambda expression
 
 ```
-func foo(x boolean, y number) string {
+lambda(x boolean, y number) string {
   return "hello"
 }
 ```
+
+## Statements
 
 ### Variable definition
 
