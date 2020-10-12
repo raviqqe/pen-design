@@ -81,7 +81,7 @@ person{ name: "foo", age: 42 }
 person{ ...p, name: "bar" }
 ```
 
-### Unions
+### Enum types
 
 ```
 enum foo {
