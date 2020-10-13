@@ -26,7 +26,7 @@ Foo = ...
 ```
 import "github.com/pen-lang/foo/foo"
 
-func bar() {
+lambda bar() {
   Foo()
 }
 ```
@@ -45,7 +45,7 @@ record baz {
   foo: foo.Foo
 }
 
-func blah() {
+lambda blah() {
   foo.Bar()
 }
 ```

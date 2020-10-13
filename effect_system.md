@@ -18,7 +18,7 @@
 ## Main functions
 
 ```
-func main(os Os) ! {
+lambda main(os Os) ! {
   ...
 }
 ```
@@ -30,9 +30,9 @@ record Os {
   arguments: []string
   environmentVariables: []string
 
-  openFile: func(string, FileMode) !File
-  readFile: func(File) !string
-  writeFile: func(File, string) !
+  openFile: lambda(string, FileMode) !File
+  readFile: lambda(File) !string
+  writeFile: lambda(File, string) !
   ...
 }
 ```

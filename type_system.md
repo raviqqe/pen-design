@@ -44,7 +44,7 @@ record error {
 ### Functions
 
 ```
-func(a, b) c
+lambda(a, b) c
 ```
 
 ### Arrays
