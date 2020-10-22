@@ -1,7 +1,7 @@
 # Type system
 
 - Nominal typing
-- No polymorphism
+- Restricted polymorphism
 - Bidirectional type inference
 
 ## Types
