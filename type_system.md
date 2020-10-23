@@ -50,7 +50,7 @@ lambda(a, b) c
 ### Arrays
 
 ```
-[]a
+[a]
 ```
 
 #### Literals
