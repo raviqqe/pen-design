@@ -57,7 +57,7 @@ lambda(a, b) c
 
 ```
 [1, 2, 3]
-[x, ...xs]
+[...xs, x]
 ```
 
 ### Record types
