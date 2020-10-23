@@ -1,7 +1,7 @@
 # Type system
 
 - Nominal typing
-- No polymorphism
+- Restricted polymorphism
 - Bidirectional type inference
 
 ## Types
@@ -25,39 +25,23 @@ none
 "string"
 ```
 
-### Any
-
-- The top type
-
-```
-any
-```
-
-### Error
-
-```
-record error {
-  source: any
-}
-```
-
 ### Functions
 
 ```
-lambda(a, b) c
+\(a, b) c
 ```
 
 ### Arrays
 
 ```
-[]a
+[a]
 ```
 
 #### Literals
 
 ```
 [1, 2, 3]
-[x, ...xs]
+[...xs, x]
 ```
 
 ### Record types
@@ -82,22 +66,23 @@ person{...p, name: "bar"}
 ### Union types
 
 ```
-union foo {
-  foo(bar)
-  baz
+foo | bar
+```
+
+### Any
+
+- The top type
+
+```
+any
+```
+
+### Error
+
+```
+type error {
+  source: any
 }
-```
-
-### Options
-
-```
-?person
-```
-
-### Results
-
-```
-!person
 ```
 
 ## Expressions
@@ -105,7 +90,7 @@ union foo {
 ### Lambda expression
 
 ```
-lambda(x boolean, y number) string {
+\(x boolean, y number) string {
   return "hello"
 }
 ```
@@ -134,22 +119,7 @@ if true {
 
 ### Switch statement
 
-#### Union matching
-
-```
-switch x {
-case foo(x)
-  ...
-case bar(x)
-  ...
-default
-  ...
-}
-```
-
-#### Type matching
-
-- For any, option and result types
+- For union and any types
 
 ```
 switch type x {
@@ -167,7 +137,7 @@ default
 #### Conditional
 
 ```
-for true {
+for x {
   ...
 }
 ```
@@ -178,4 +148,10 @@ for true {
 for x in xs {
   ...
 }
+```
+
+### Type alias
+
+```
+type foo = bar
 ```
