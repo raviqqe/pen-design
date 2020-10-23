@@ -18,7 +18,7 @@
 ## Main functions
 
 ```
-lambda main(os Os) ! {
+main = \(os Os) none | error {
   ...
 }
 ```
@@ -30,9 +30,9 @@ record Os {
   arguments: []string
   environmentVariables: []string
 
-  openFile: lambda(string, FileMode) !File
-  readFile: lambda(File) !string
-  writeFile: lambda(File, string) !
+  openFile: \(string, FileMode) File | error
+  readFile: \(File) string | error
+  writeFile: \(File, string) none | error
   ...
 }
 ```
