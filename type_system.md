@@ -167,7 +167,7 @@ default
 #### Conditional
 
 ```
-for true {
+for x {
   ...
 }
 ```
