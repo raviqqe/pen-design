@@ -105,6 +105,12 @@ type error {
 }
 ```
 
+#### `?` operator
+
+```
+x?
+```
+
 ## Expressions
 
 ### Lambda expression
