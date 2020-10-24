@@ -154,6 +154,13 @@ for x in xs {
 }
 ```
 
+#### Local exit
+
+```
+continue
+break
+```
+
 ### Type alias
 
 ```
