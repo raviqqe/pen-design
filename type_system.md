@@ -47,7 +47,7 @@ xs[0]
 
 ### Maps
 
-- Keys can be number or string types.
+- Keys are number or string types.
 
 ```
 {a: b}
