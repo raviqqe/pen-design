@@ -46,8 +46,6 @@ none
 
 ### User-defined types
 
-- Fields are private outside modules.
-
 ```
 type person {
   name string
