@@ -37,7 +37,7 @@ none
 [a]
 ```
 
-#### Literals
+#### Operations
 
 ```
 [1, 2, 3]
