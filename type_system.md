@@ -42,6 +42,22 @@ none
 ```
 [1, 2, 3]
 [...xs, x]
+xs[0]
+```
+
+### Maps
+
+- Keys can be number or string types.
+
+```
+{a: b}
+```
+
+#### Operations
+
+```
+{"foo": "bar"}
+xs["foo"]
 ```
 
 ### User-defined types
