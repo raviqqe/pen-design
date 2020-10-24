@@ -5,13 +5,13 @@
 - Capitalize names.
 
 ```
-type Foo {
-  ...
-}
+Foo = ...
 ```
 
 ```
-Foo = ...
+type Foo {
+  ...
+}
 ```
 
 ## Import
