@@ -11,13 +11,6 @@ type Foo {
 ```
 
 ```
-union Foo {
-  Bar
-  ...
-}
-```
-
-```
 Foo = ...
 ```
 
