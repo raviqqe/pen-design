@@ -2,7 +2,7 @@
 
 ## Export
 
-- Capitalize the first letters.
+- Capitalize names.
 
 ```
 type Foo {
