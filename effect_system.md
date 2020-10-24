@@ -26,7 +26,7 @@ main = \(os Os) none | error {
 ### OS type
 
 ```
-record Os {
+type Os {
   arguments: []string
   environmentVariables: []string
 

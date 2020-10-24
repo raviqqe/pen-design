@@ -5,7 +5,7 @@
 - Capitalize the first letters.
 
 ```
-record Foo {
+type Foo {
   ...
 }
 ```
@@ -41,7 +41,7 @@ bar = \() none {
 ```
 import foo "github.com/pen-lang/foo/foo"
 
-record baz {
+type baz {
   foo: foo.Foo
 }
 
