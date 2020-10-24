@@ -142,7 +142,7 @@ if x {
 - For union and any types
 
 ```
-switch x {
+switch x = y {
 case number
   ...
 case string
