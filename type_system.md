@@ -44,15 +44,21 @@ none
 [...xs, x]
 ```
 
-### Record types
+### User-defined types
 
 - Fields are private outside modules.
 
 ```
-record person {
+type person {
   name string
   age  number
 }
+```
+
+#### Without fields
+
+```
+type foo
 ```
 
 #### Operations
@@ -122,7 +128,7 @@ if true {
 - For union and any types
 
 ```
-switch type x {
+switch x {
 case number
   ...
 case string
