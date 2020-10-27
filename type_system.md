@@ -60,12 +60,6 @@ xs[0]
 xs["foo"]
 ```
 
-### Stream
-
-```
-stream{1, 2, 3}
-```
-
 ### User-defined types
 
 ```
