@@ -31,9 +31,7 @@ none
 \(a, b) c
 ```
 
-### Lists
-
-- Lazy
+### Arrays
 
 ```
 [a]
@@ -43,7 +41,23 @@ none
 
 ```
 [1, 2, 3]
-[x, ...xs]
+[...xs, x]
+xs[0]
+```
+
+### Maps
+
+- Keys are number or string types.
+
+```
+{a: b}
+```
+
+#### Operations
+
+```
+{"foo": "bar"}
+xs["foo"]
 ```
 
 ### User-defined types
