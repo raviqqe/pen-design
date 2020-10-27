@@ -101,7 +101,7 @@ any
 
 ```
 type error {
-  source: any
+  source any
 }
 ```
 
