@@ -75,13 +75,6 @@ x << func() <a> {
 }
 ```
 
-#### Operations
-
-```
-{"foo": "bar"}
-xs["foo"]
-```
-
 ### User-defined types
 
 ```
