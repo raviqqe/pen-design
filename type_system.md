@@ -68,10 +68,9 @@ xs["foo"]
 
 #### Operations
 
-- The LHS is evaluated lazily
-
 ```
-x << func() <a> | error {
+<>
+x << func() <a> {
   return ...
 }
 ```
