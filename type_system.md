@@ -158,31 +158,6 @@ default
 }
 ```
 
-### For statement
-
-#### Conditional
-
-```
-for x {
-  ...
-}
-```
-
-#### Iterative
-
-```
-for x in xs {
-  ...
-}
-```
-
-#### Local exit
-
-```
-continue
-break
-```
-
 ### Type alias
 
 ```
