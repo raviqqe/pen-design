@@ -150,9 +150,7 @@ _:
 
 ## Statements
 
-### Variable definition
-
-- Variables of the same names in functions are overwritten.
+### Variable binding
 
 ```
 foo = ...
