@@ -1,6 +1,7 @@
 # Type system
 
 - Nominal typing
+- Subtyping
 - Restricted polymorphism
 - Bidirectional type inference
 
@@ -31,7 +32,10 @@ none
 \(a, b) c
 ```
 
-### Arrays
+### Lists
+
+- Generic
+- Lazy
 
 ```
 [a]
@@ -41,8 +45,7 @@ none
 
 ```
 [1, 2, 3]
-[...xs, x]
-xs[0]
+[x, ...xs]
 ```
 
 ### Maps
@@ -57,6 +60,7 @@ xs[0]
 
 ```
 {"foo": "bar"}
+{...xs, "foo": "bar"}
 xs["foo"]
 ```
 
@@ -94,8 +98,8 @@ type foo
 
 ```
 p.name
-person{name: "foo", age: 42}
-person{...p, name: "bar"}
+person{name "foo", age 42}
+person{...p, name "foo"}
 ```
 
 ### Union types
@@ -122,31 +126,23 @@ type error {
 
 #### `?` operator
 
+- For `... | error` types
+
 ```
 x?
 ```
 
 ## Expressions
 
-### Lambda expression
+### Lambda
 
 ```
 \(x boolean, y number) string {
-  return "hello"
+  "hello"
 }
 ```
 
-## Statements
-
-### Variable definition
-
-- Variables of the same names in functions are overwritten.
-
-```
-foo = ...
-```
-
-### If statement
+### `if`
 
 ```
 if x {
@@ -158,48 +154,42 @@ if x {
 }
 ```
 
-### Switch statement
+### `switch`
 
-- For union and any types
+#### Union and any types
 
 ```
 switch x = y {
-case number
+number:
   ...
-case string
+string | none:
   ...
-default
-  ...
-}
-```
-
-### For statement
-
-#### Conditional
-
-```
-for x {
+_:
   ...
 }
 ```
 
-#### Iterative
+#### List types
 
 ```
-for x in xs {
+switch xs {
+[]:
+  ...
+[y, ...ys]:
   ...
 }
 ```
 
-#### Local exit
+## Statements
+
+### Variable binding
 
 ```
-continue
-break
+foo = ...
 ```
 
 ### Type alias
 
 ```
-type foo = bar
+type foo = ...
 ```
