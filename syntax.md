@@ -14,9 +14,9 @@ foo = ...
 type foo = ...
 ```
 
-### Record types
+### Records
 
-See [Type system](type_system.md#record-types).
+See [Type system](type_system.md#records).
 
 ### Module import and export
 
