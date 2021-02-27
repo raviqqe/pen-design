@@ -156,10 +156,10 @@ _:
 #### List types
 
 ```
-switch x = y {
+switch xs {
 []:
   ...
-[x, ...xs]:
+[y, ...ys]:
   ...
 }
 ```
