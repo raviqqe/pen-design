@@ -35,7 +35,7 @@ bar = \() none {
 import foo "github.com/pen-lang/foo/foo"
 
 type baz {
-  foo: foo.Foo
+  foo foo.Foo
 }
 
 blah = \() none {
