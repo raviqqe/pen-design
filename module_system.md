@@ -10,6 +10,7 @@ Foo = ...
 
 ```
 type Foo {
+  Bar number
   ...
 }
 ```
@@ -17,28 +18,20 @@ type Foo {
 ## Import
 
 ```
-import "github.com/pen-lang/foo/foo"
+import "github.com/foo/foo"
 
-bar = \() none {
-  Foo()
-}
+x = foo.Foo
 ```
 
 ### Referencing
 
 - A repository name + a module name
-  - e.g. `github.com/pen-lang/foo/foo/bar` for a file named `bar.pen` in a `foo` directory in a repository of `github.com/pen-lang/foo`
+  - e.g. `github.com/foo/bar/baz` for a `baz` directory in a `github.com/foo/bar` repository
 
-### Qualification
+### Custom prefixes
 
 ```
-import foo "github.com/pen-lang/foo/foo"
+import bar "github.com/foo/foo"
 
-type baz {
-  foo foo.Foo
-}
-
-blah = \() none {
-  foo.Bar()
-}
+x = bar.Foo()
 ```
