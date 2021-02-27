@@ -33,5 +33,5 @@ x = foo.Foo
 ```
 import bar "github.com/foo/foo"
 
-x = bar.Foo()
+x = bar.Foo
 ```
