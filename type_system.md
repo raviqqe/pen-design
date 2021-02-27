@@ -145,15 +145,12 @@ if x {
 
 ```
 switch x = y {
-  number {
-    ...
-  }
-  string | none {
-    ...
-  }
-  _ {
-    ...
-  }
+number:
+  ...
+string | none:
+  ...
+_:
+  ...
 }
 ```
 
@@ -161,12 +158,10 @@ switch x = y {
 
 ```
 switch xs {
-  [] {
-    ...
-  }
-  [y, ...ys] {
-    ...
-  }
+[]:
+  ...
+[y, ...ys]:
+  ...
 }
 ```
 
