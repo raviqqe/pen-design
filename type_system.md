@@ -119,6 +119,12 @@ x?
 
 ## Expressions
 
+### Function calls
+
+```
+f(x, y)
+```
+
 ### Lambda
 
 ```
