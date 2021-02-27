@@ -181,5 +181,5 @@ foo = ...
 ### Type alias
 
 ```
-type foo = bar
+type foo = ...
 ```
