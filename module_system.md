@@ -10,6 +10,7 @@ Foo = ...
 
 ```
 type Foo {
+  Bar number
   ...
 }
 ```
@@ -17,10 +18,10 @@ type Foo {
 ## Import
 
 ```
-import "github.com/pen-lang/foo/foo"
+import "github.com/foo/bar"
 
-bar = \() none {
-  Foo()
+baz = \() none {
+  bar.Bar()
 }
 ```
 
