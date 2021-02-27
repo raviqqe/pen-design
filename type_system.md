@@ -16,16 +16,6 @@ number
 string
 ```
 
-#### Literals
-
-```
-false
-true
-none
--12.3
-"string"
-```
-
 ### Functions
 
 ```
@@ -41,27 +31,12 @@ none
 [a]
 ```
 
-#### Operations
-
-```
-[1, 2, 3]
-[x, ...xs]
-```
-
 ### Maps
 
 - Keys are number or string types.
 
 ```
 {a: b}
-```
-
-#### Operations
-
-```
-{"foo": "bar"}
-{...xs, "foo": "bar"}
-xs["foo"]
 ```
 
 ### User-defined types
@@ -77,14 +52,6 @@ type person {
 
 ```
 type foo
-```
-
-#### Operations
-
-```
-p.name
-person{name "foo", age 42}
-person{...p, name "foo"}
 ```
 
 ### Union types
@@ -107,80 +74,4 @@ any
 type error {
   source any
 }
-```
-
-#### `?` operator
-
-- For `... | error` types
-
-```
-x?
-```
-
-## Expressions
-
-### Function calls
-
-```
-f(x, y)
-```
-
-### Lambda
-
-```
-\(x boolean, y number) string {
-  "hello"
-}
-```
-
-### `if`
-
-```
-if x {
-  ...
-} else if y {
-  ...
-} else {
-  ...
-}
-```
-
-### `switch`
-
-#### Union and any types
-
-```
-switch x = y {
-number:
-  ...
-string | none:
-  ...
-_:
-  ...
-}
-```
-
-#### List types
-
-```
-switch xs {
-[]:
-  ...
-[y, ...ys]:
-  ...
-}
-```
-
-## Statements
-
-### Variable binding
-
-```
-foo = ...
-```
-
-### Type alias
-
-```
-type foo = ...
 ```
