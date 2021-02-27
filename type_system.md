@@ -2,6 +2,7 @@
 
 - Nominal typing
 - Subtyping
+  - No covariance or contravariance
 - Restricted polymorphism
 - Bidirectional type inference
 
