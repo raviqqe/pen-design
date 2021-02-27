@@ -14,7 +14,7 @@ foo = ...
 type foo = ...
 ```
 
-### Records
+### Record definitions
 
 See [Type system](type_system.md#records).
 
