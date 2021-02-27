@@ -59,7 +59,7 @@ none
 
 ```
 {"foo": "bar"}
-xs["foo"]
+xs @ "foo"
 ```
 
 ### User-defined types
