@@ -113,25 +113,15 @@ x?
 
 ## Expressions
 
-### Lambda expression
+### Lambda
 
 ```
 \(x boolean, y number) string {
-  return "hello"
+  "hello"
 }
 ```
 
-## Statements
-
-### Variable definition
-
-- Variables of the same names in functions are overwritten.
-
-```
-foo = ...
-```
-
-### If statement
+### `if` `else`
 
 ```
 if x {
@@ -143,19 +133,29 @@ if x {
 }
 ```
 
-### Switch statement
+### `switch`
 
 - For union and any types
 
 ```
 switch x = y {
-case number
+number:
   ...
-case string
+string:
   ...
-default
+_:
   ...
 }
+```
+
+## Statements
+
+### Variable definition
+
+- Variables of the same names in functions are overwritten.
+
+```
+foo = ...
 ```
 
 ### Type alias
