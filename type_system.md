@@ -24,7 +24,6 @@ string
 
 ### Lists
 
-- Generic
 - Lazy
 
 ```
