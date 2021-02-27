@@ -37,7 +37,7 @@ string
 {a: b}
 ```
 
-## User-defined types
+## Record types
 
 ```
 type person {
