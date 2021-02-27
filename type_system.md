@@ -31,7 +31,10 @@ none
 \(a, b) c
 ```
 
-### Arrays
+### Lists
+
+- Generic
+- Lazy
 
 ```
 [a]
@@ -42,7 +45,6 @@ none
 ```
 [1, 2, 3]
 [...xs, x]
-xs[0]
 ```
 
 ### Maps
