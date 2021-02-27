@@ -1,5 +1,6 @@
 # The design of Pen programming language
 
+- [Syntax](syntax.md)
 - [Type system](type_system.md)
 - [Effect system](effect_system.md)
 - [Module system](module_system.md)

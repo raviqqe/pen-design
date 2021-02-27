@@ -2,12 +2,11 @@
 
 - Nominal typing
 - Subtyping
+  - No covariance or contravariance
 - Restricted polymorphism
 - Bidirectional type inference
 
-## Types
-
-### Primitives
+## Primitives
 
 ```
 boolean
@@ -16,39 +15,21 @@ number
 string
 ```
 
-#### Literals
-
-```
-false
-true
-none
--12.3
-"string"
-```
-
-### Functions
+## Functions
 
 ```
 \(a, b) c
 ```
 
-### Lists
+## Lists
 
-- Generic
 - Lazy
 
 ```
 [a]
 ```
 
-#### Operations
-
-```
-[1, 2, 3]
-[x, ...xs]
-```
-
-### Maps
+## Maps
 
 - Keys are number or string types.
 
@@ -56,15 +37,7 @@ none
 {a: b}
 ```
 
-#### Operations
-
-```
-{"foo": "bar"}
-{...xs, "foo": "bar"}
-xs["foo"]
-```
-
-### User-defined types
+## User-defined types
 
 ```
 type person {
@@ -73,27 +46,19 @@ type person {
 }
 ```
 
-#### Without fields
+### Without fields
 
 ```
 type foo
 ```
 
-#### Operations
-
-```
-p.name
-person{name "foo", age 42}
-person{...p, name "foo"}
-```
-
-### Union types
+## Union types
 
 ```
 foo | bar
 ```
 
-### Any
+## Any
 
 - The top type
 
@@ -101,86 +66,10 @@ foo | bar
 any
 ```
 
-### Error
+## Error
 
 ```
 type error {
   source any
 }
-```
-
-#### `?` operator
-
-- For `... | error` types
-
-```
-x?
-```
-
-## Expressions
-
-### Function calls
-
-```
-f(x, y)
-```
-
-### Lambda
-
-```
-\(x boolean, y number) string {
-  "hello"
-}
-```
-
-### `if`
-
-```
-if x {
-  ...
-} else if y {
-  ...
-} else {
-  ...
-}
-```
-
-### `switch`
-
-#### Union and any types
-
-```
-switch x = y {
-number:
-  ...
-string | none:
-  ...
-_:
-  ...
-}
-```
-
-#### List types
-
-```
-switch xs {
-[]:
-  ...
-[y, ...ys]:
-  ...
-}
-```
-
-## Statements
-
-### Variable binding
-
-```
-foo = ...
-```
-
-### Type alias
-
-```
-type foo = ...
 ```
