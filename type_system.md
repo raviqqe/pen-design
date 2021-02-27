@@ -59,6 +59,7 @@ none
 
 ```
 {"foo": "bar"}
+{...xs, "foo": "bar"}
 xs["foo"]
 ```
 
