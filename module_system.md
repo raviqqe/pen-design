@@ -26,7 +26,7 @@ x = foo.Foo
 ### Referencing
 
 - A repository name + a module name
-  - e.g. `github.com/pen-lang/foo/foo/bar` for a `bar` directory in a `github.com/pen-lang/foo` repository
+  - e.g. `github.com/foo/foo/bar` for a `bar` directory in a `github.com/pen-lang/foo` repository
 
 ### Custom prefixes
 
