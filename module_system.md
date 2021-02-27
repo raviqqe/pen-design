@@ -18,11 +18,9 @@ type Foo {
 ## Import
 
 ```
-import "github.com/foo/bar"
+import "github.com/foo/foo"
 
-baz = \() none {
-  bar.Bar()
-}
+x = foo.Foo
 ```
 
 ### Referencing
@@ -30,16 +28,10 @@ baz = \() none {
 - A repository name + a module name
   - e.g. `github.com/pen-lang/foo/foo/bar` for a file named `bar.pen` in a `foo` directory in a repository of `github.com/pen-lang/foo`
 
-### Qualification
+### Custom prefixes
 
 ```
-import foo "github.com/pen-lang/foo/foo"
+import bar "github.com/foo/foo"
 
-type baz {
-  foo foo.Foo
-}
-
-blah = \() none {
-  foo.Bar()
-}
+x = bar.Foo()
 ```
