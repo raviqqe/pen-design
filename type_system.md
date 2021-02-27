@@ -5,9 +5,7 @@
 - Restricted polymorphism
 - Bidirectional type inference
 
-## Types
-
-### Primitives
+## Primitives
 
 ```
 boolean
@@ -16,13 +14,13 @@ number
 string
 ```
 
-### Functions
+## Functions
 
 ```
 \(a, b) c
 ```
 
-### Lists
+## Lists
 
 - Lazy
 
@@ -30,7 +28,7 @@ string
 [a]
 ```
 
-### Maps
+## Maps
 
 - Keys are number or string types.
 
@@ -38,7 +36,7 @@ string
 {a: b}
 ```
 
-### User-defined types
+## User-defined types
 
 ```
 type person {
@@ -47,19 +45,19 @@ type person {
 }
 ```
 
-#### Without fields
+### Without fields
 
 ```
 type foo
 ```
 
-### Union types
+## Union types
 
 ```
 foo | bar
 ```
 
-### Any
+## Any
 
 - The top type
 
@@ -67,7 +65,7 @@ foo | bar
 any
 ```
 
-### Error
+## Error
 
 ```
 type error {
