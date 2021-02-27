@@ -82,8 +82,8 @@ type foo
 
 ```
 p.name
-person{name: "foo", age: 42}
-person{...p, name: "bar"}
+person{name "foo", age 42}
+person{...p, name "bar"}
 ```
 
 ### Union types
