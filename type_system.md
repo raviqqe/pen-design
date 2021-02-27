@@ -137,7 +137,7 @@ if x {
 
 ### `switch`
 
-- For union and any types
+#### Union and any types
 
 ```
 switch x = y {
@@ -146,6 +146,17 @@ number:
 string | none:
   ...
 _:
+  ...
+}
+```
+
+#### List types
+
+```
+switch x = y {
+[]:
+  ...
+[x, ...xs]:
   ...
 }
 ```
