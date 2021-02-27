@@ -98,7 +98,7 @@ if x {
 ##### Union and any types
 
 ```
-switch x = y {
+switch x = ... {
 number:
   ...
 string | none:
