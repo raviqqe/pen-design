@@ -110,6 +110,8 @@ type error {
 
 #### `?` operator
 
+- For `... | error` types
+
 ```
 x?
 ```
