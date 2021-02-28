@@ -20,8 +20,8 @@
 
 ## Module directories
 
-- Lower case without signs
-  - `foo_bar`
+- Lower case without any sign
+  - `foobar`
 - Follow [Go's convention](https://blog.golang.org/package-names).
 
 ## Packages
