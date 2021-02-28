@@ -21,9 +21,7 @@ string
 \(a, b) c
 ```
 
-## Lists
-
-- Lazy
+## Arrays
 
 ```
 [a]
