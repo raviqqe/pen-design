@@ -98,15 +98,15 @@ if x {
 }
 ```
 
-#### `switch`
+#### `case`
 
 ##### Stream types
 
 ```
-switch xs {
-case <>
+case xs {
+of <>
   ...
-case <y, ...ys>
+of <y, ...ys>
   ...
 }
 ```
@@ -114,10 +114,10 @@ case <y, ...ys>
 ##### Union and any types
 
 ```
-switch x = ... {
-case number
+case x = ... {
+of number
   ...
-case string | none
+of string | none
   ...
 else
   ...
