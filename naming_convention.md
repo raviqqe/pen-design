@@ -11,8 +11,8 @@
 
 ## Modules
 
-- Snake case
-  - `foo_bar`
+- Lower case without signs
+  - `foobar`
 
 ## Packages
 
