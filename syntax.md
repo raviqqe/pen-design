@@ -55,6 +55,7 @@ f(x, y)
 ```
 [1, 2, 3]
 [x, ...xs]
+xs[42] # element | error
 ```
 
 ### Maps
@@ -62,7 +63,7 @@ f(x, y)
 ```
 {"foo": "bar"}
 {...xs, "foo": "bar"}
-xs["foo"]
+xs["foo"] # value | error
 ```
 
 ### User-defined types
