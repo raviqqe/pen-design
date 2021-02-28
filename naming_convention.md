@@ -9,7 +9,7 @@
 - Lower or upper camel case
   - `fooBar`
   - `FooBar`
-- They can be extra short [like in Go](https://github.com/golang/go/wiki/CodeReviewComments#variable-names).
+- Local names can be extra short [like in Go](https://github.com/golang/go/wiki/CodeReviewComments#variable-names).
   - `i` for `index`
   - `c` for `requestCount`
 
