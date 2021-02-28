@@ -66,12 +66,12 @@ xs[42] # element | error
 xs["foo"] # value | error
 ```
 
-### User-defined types
+### Records
 
 ```
 x.name
-person{name "foo", age 42}
-person{...x, name "foo"}
+person{name: "foo", age: 42}
+person{...x, name: "foo"}
 ```
 
 ### Error handling
