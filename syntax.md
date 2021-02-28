@@ -113,7 +113,7 @@ _:
 }
 ```
 
-##### List types
+##### Stream types
 
 ```
 switch xs {
