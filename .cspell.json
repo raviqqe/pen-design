@@ -5,10 +5,8 @@
     "intercal",
     "koka",
     "libhandler",
-    "llvm",
     "mlsub",
     "stateful",
-    "subtyped",
     "subtyping"
   ]
 }
