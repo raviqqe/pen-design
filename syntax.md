@@ -131,7 +131,7 @@ of <<x, ...xs>>
 
 ```
 case xs {
-of {"foo":x, ...xs}
+of {"foo": x, ...xs}
   ...
 else
   ...
