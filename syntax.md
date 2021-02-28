@@ -104,9 +104,9 @@ if x {
 
 ```
 switch xs {
-case <>:
+case <>
   ...
-case <y, ...ys>:
+case <y, ...ys>
   ...
 }
 ```
@@ -115,11 +115,11 @@ case <y, ...ys>:
 
 ```
 switch x = ... {
-case number:
+case number
   ...
-case string | none:
+case string | none
   ...
-default:
+default
   ...
 }
 ```
