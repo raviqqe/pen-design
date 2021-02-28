@@ -1,7 +1,8 @@
 # Naming convention
 
 - Acronyms are considered as single words.
-  - e.g. `Cpu`, `Ast`, etc.
+  - `Cpu`
+  - `Ast`
 
 ## Variables and types
 
