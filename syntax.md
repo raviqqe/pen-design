@@ -83,8 +83,6 @@ person{...x, name: "foo"}
 
 ### Error handling
 
-#### `?` operator
-
 - For `... | error` types
 
 ```
