@@ -1,11 +1,12 @@
 # The design of Pen programming language
 
+- [Syntax](syntax.md)
 - [Type system](type_system.md)
 - [Effect system](effect_system.md)
 - [Module system](module_system.md)
 - [Package system](package_system.md)
 - [Naming convention](naming_convention.md)
-- [References](references.md)
+- [References](https://github.com/raviqqe/language-design)
 
 ## Mission statement
 
