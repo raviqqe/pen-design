@@ -35,7 +35,7 @@ string
 
 ## Maps
 
-- Keys are subtypes of `boolean | none | number | string`.
+- Keys cannot be functions, `any` or any other types including them.
 
 ```
 {a: b}
