@@ -58,6 +58,14 @@ f(x, y)
 xs[42] # element | error
 ```
 
+### Streams
+
+#### Join operator
+
+```
+\() a { ... } << \() <a> { ... }
+```
+
 ### Maps
 
 ```
