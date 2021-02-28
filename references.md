@@ -16,10 +16,13 @@
 - [Nim](https://github.com/nim-lang/Nim)
   - Its garbage collection with deferred reference counting is interesting.
 - [Koka](https://github.com/koka-lang/koka)
+- [Lean 4](https://github.com/leanprover/lean4)
+- [Lobster](https://github.com/aardappel/lobster)
 
 ## Language design
 
 - [Less is more: language features](https://blog.ploeh.dk/2015/04/13/less-is-more-language-features/)
+- [プログラミング言語の未来はどうなるか](https://keens.github.io/blog/2021/01/04/future_of_proguramming_languages/)
 
 ## Type system
 
@@ -38,6 +41,8 @@
 ### Reference counting
 
 - [Counting Immutable Beans: Reference Counting Optimized for Purely Functional Programming](https://arxiv.org/abs/1908.05647)
+  - [Slides](https://leanprover.github.io/talks/IFL2019.pdf)
+- [Perceus: Garbage Free Reference Counting with Reuse](https://www.microsoft.com/en-us/research/publication/perceus-garbage-free-reference-counting-with-reuse/)
 
 ### Immix GC
 
@@ -54,3 +59,21 @@
 ## Coroutines
 
 - [From folklore to fact: comparing implementations of stacks and continuations](https://dl.acm.org/doi/10.1145/3385412.3385994)
+
+## Lazy evaluation
+
+- [The Spineless Tagless G-machine](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/04/spineless-tagless-gmachine.pdf)
+
+## WASM
+
+- [emscripten](https://emscripten.org/index.html)
+- [wasmtime](https://github.com/bytecodealliance/wasmtime)
+- [Cranelift](https://github.com/bytecodealliance/wasmtime/tree/main/cranelift)
+  - [Cranelift IR](https://github.com/bytecodealliance/wasmtime/blob/main/cranelift/docs/ir.md)
+- [wasi crate for Rust](https://github.com/bytecodealliance/wasi)
+- [mimalloc](https://github.com/microsoft/mimalloc)
+
+## Module system
+
+- [Deno](https://deno.land/)
+  - [Linking to third party code](https://deno.land/manual/linking_to_external_code)
