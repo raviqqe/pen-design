@@ -104,15 +104,12 @@ if x {
 
 ```
 switch x = ... {
-  number {
-    ...
-  }
-  string | none {
-    ...
-  }
-  _ {
-    ...
-  }
+case number:
+  ...
+case string | none:
+  ...
+default:
+  ...
 }
 ```
 
@@ -120,11 +117,9 @@ switch x = ... {
 
 ```
 switch xs {
-  <> {
-    ...
-  }
-  <y, ...ys> {
-    ...
-  }
+case <>:
+  ...
+case <y, ...ys>:
+  ...
 }
 ```
