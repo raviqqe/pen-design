@@ -100,6 +100,17 @@ if x {
 
 #### `switch`
 
+##### Stream types
+
+```
+switch xs {
+case <>:
+  ...
+case <y, ...ys>:
+  ...
+}
+```
+
 ##### Union and any types
 
 ```
@@ -109,17 +120,6 @@ case number:
 case string | none:
   ...
 default:
-  ...
-}
-```
-
-##### Stream types
-
-```
-switch xs {
-case <>:
-  ...
-case <y, ...ys>:
   ...
 }
 ```
