@@ -60,6 +60,10 @@ xs[42] # element | error
 
 ### Streams
 
+```
+<>
+```
+
 #### Join operator
 
 ```
