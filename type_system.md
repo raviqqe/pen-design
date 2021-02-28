@@ -27,6 +27,12 @@ string
 [a]
 ```
 
+## Streams
+
+```
+<a>
+```
+
 ## Maps
 
 - Keys are subtypes of `boolean | none | number | string`.
