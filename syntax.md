@@ -93,7 +93,7 @@ x?
 
 ### Conditionals
 
-#### `if`
+#### Booleans
 
 ```
 if x {
@@ -105,28 +105,26 @@ if x {
 }
 ```
 
-#### `case`
-
-- For unions and `any`
+#### Unions and `any`
 
 ```
-case x = ... {
-of number
+x = ...
+
+if x = number {
   ...
-of string | none
+} else if string | none {
   ...
-else
+} else {
   ...
 }
 ```
 
-#### `select`
+#### Streams
 
 ```
-select xs {
-of <<x, ...xs>>
+if <<x, ...xs>> = xs {
   ...
-else
+} else {
   ...
 }
 ```
