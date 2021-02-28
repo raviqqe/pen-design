@@ -21,17 +21,21 @@ string
 \(a, b) c
 ```
 
-## Lists
-
-- Lazy
+## Arrays
 
 ```
 [a]
 ```
 
+## Streams
+
+```
+<<a>>
+```
+
 ## Maps
 
-- Keys are number or string types.
+- Keys are subtypes of `boolean | none | number | string`.
 
 ```
 {a: b}

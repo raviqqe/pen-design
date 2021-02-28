@@ -50,11 +50,18 @@ f(x, y)
 }
 ```
 
-### Lists
+### Arrays
 
 ```
 [1, 2, 3]
 [x, ...xs]
+```
+
+### Streams
+
+```
+<<>>
+<<x, ...xs>>
 ```
 
 ### Maps
@@ -62,15 +69,14 @@ f(x, y)
 ```
 {"foo": "bar"}
 {...xs, "foo": "bar"}
-xs["foo"]
 ```
 
-### User-defined types
+### Records
 
 ```
 x.name
-person{name "foo", age 42}
-person{...x, name "foo"}
+person{name: "foo", age: 42}
+person{...x, name: "foo"}
 ```
 
 ### Error handling
@@ -97,28 +103,50 @@ if x {
 }
 ```
 
-#### `switch`
+#### `case`
 
-##### Union and any types
+##### Arrays
 
 ```
-switch x = ... {
-number:
+case xs {
+of []
   ...
-string | none:
-  ...
-_:
+of [x, xs]
   ...
 }
 ```
 
-##### List types
+##### Streams
 
 ```
-switch xs {
-[]:
+case xs {
+of <<>>
   ...
-[y, ...ys]:
+of <<x, ...xs>>
+  ...
+}
+```
+
+##### Maps
+
+```
+case xs {
+of {"foo": x, ...xs}
+  ...
+else
+  ...
+}
+```
+
+##### Unions and `any`
+
+```
+case x = ... {
+of number
+  ...
+of string | none
+  ...
+else
   ...
 }
 ```
