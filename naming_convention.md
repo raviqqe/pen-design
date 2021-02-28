@@ -11,8 +11,14 @@
 
 ## Modules
 
+- Snake case
+  - `foo_bar`
+
+## Module directories
+
 - Lower case without signs
-  - `foobar`
+  - `foo_bar`
+- Follow [Go's convention](https://blog.golang.org/package-names).
 
 ## Packages
 
