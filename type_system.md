@@ -29,7 +29,7 @@ string
 
 ## Maps
 
-- Keys are number or string types.
+- Keys are subtypes of `boolean | none | number | string`.
 
 ```
 {a: b}
