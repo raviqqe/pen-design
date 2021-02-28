@@ -55,6 +55,7 @@ f(x, y)
 ```
 [1, 2, 3]
 [x, ...xs]
+xs[42] # ... | error
 ```
 
 ### Streams
@@ -69,6 +70,7 @@ f(x, y)
 ```
 {"foo": "bar"}
 {...xs, "foo": "bar"}
+xs["foo"] # ... | error
 ```
 
 ### Records
@@ -105,46 +107,24 @@ if x {
 
 #### `case`
 
-##### Arrays
-
-```
-case xs {
-of []
-  ...
-of [x, xs]
-  ...
-}
-```
-
-##### Streams
-
-```
-case xs {
-of <<>>
-  ...
-of <<x, ...xs>>
-  ...
-}
-```
-
-##### Maps
-
-```
-case xs {
-of {"foo": x, ...xs}
-  ...
-else
-  ...
-}
-```
-
-##### Unions and `any`
+- For unions and `any`
 
 ```
 case x = ... {
 of number
   ...
 of string | none
+  ...
+else
+  ...
+}
+```
+
+#### `select`
+
+```
+select xs {
+of <<x, ...xs>>
   ...
 else
   ...
