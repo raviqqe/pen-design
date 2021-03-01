@@ -55,6 +55,7 @@ f(x, y)
 ```
 [1, 2, 3]
 [x, ...xs]
+xs[42] # ... | error
 ```
 
 ### Streams
@@ -69,6 +70,7 @@ f(x, y)
 ```
 {"foo": "bar"}
 {...xs, "foo": "bar"}
+xs["foo"] # ... | error
 ```
 
 ### Records
@@ -81,8 +83,6 @@ person{...x, name: "foo"}
 
 ### Error handling
 
-#### `?` operator
-
 - For `... | error` types
 
 ```
@@ -91,7 +91,7 @@ x?
 
 ### Conditionals
 
-#### `if`
+#### Booleans
 
 ```
 if x {
@@ -103,50 +103,26 @@ if x {
 }
 ```
 
-#### `case`
-
-##### Arrays
+#### Unions and `any`
 
 ```
-case xs {
-of []
+x = ...
+
+if x is number {
   ...
-of [x, xs]
+} else if string | none {
+  ...
+} else {
   ...
 }
 ```
 
-##### Streams
+#### Streams
 
 ```
-case xs {
-of <<>>
+if <<x, ...xs>> = xs {
   ...
-of <<x, ...xs>>
-  ...
-}
-```
-
-##### Maps
-
-```
-case xs {
-of {"foo": x, ...xs}
-  ...
-else
-  ...
-}
-```
-
-##### Unions and `any`
-
-```
-case x = ... {
-of number
-  ...
-of string | none
-  ...
-else
+} else {
   ...
 }
 ```
