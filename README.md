@@ -20,7 +20,6 @@ Make software development easier and faster!
   - Functional
   - Minimal
 - Testable
-  - Deterministic
   - Purely functional by default
 - Guided
   - Statically typed
