@@ -38,7 +38,7 @@ Make software development easier and faster!
 1. WASM backend
 1. Efficient persistent data structures
 1. Parallelism and concurrency support
-1. Language for HTTP servers
+1. HTTP server framework
 1. Binary support
 1. Web browser interface
 1. Language server
