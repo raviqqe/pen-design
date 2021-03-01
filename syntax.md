@@ -103,6 +103,24 @@ if x {
 }
 ```
 
+##### Without `else`
+
+```
+if x {
+  ...
+}
+```
+
+is equivalent to
+
+```
+if x {
+  ...
+} else {
+  none
+}
+```
+
 #### Unions and `any`
 
 ```
