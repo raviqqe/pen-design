@@ -41,6 +41,5 @@ Make software development easier and faster!
 ## Product principles
 
 - Perfection is achieved when there is nothing to take away or add.
-- Focus on your domain.
 - Complexity can only be built upon simplicity.
 - Mimic but do not depend on existing technologies.
