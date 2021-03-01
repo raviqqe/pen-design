@@ -17,18 +17,22 @@ Make IT available everywhere!
 Make software development easier and faster!
 
 - Simple
-  - Easy to learn
+  - Functional
+  - One way to do one thing
 - Testable
   - Deterministic
   - Dependency injection
 - Guided
   - Statically typed
   - Immutability
+  - Thread safe
 
 ## Product strategy
 
 1. Language for command line tools
+1. Asynchronous operations
 1. Parallelism and concurrency support
+1. WASM backend
 1. Language for HTTP servers
 1. Binary support
 1. General-purpose language
@@ -37,9 +41,6 @@ Make software development easier and faster!
 ## Product principles
 
 - Perfection is achieved when there is nothing to take away or add.
-- 1% demand does not matter.
-  - e.g. Go
+- Focus on your domain.
 - Complexity can only be built upon simplicity.
-  - Application logics are complex!
-- Resemble but do not depend on existing technologies.
-- One way to do one thing
+- Mimic but do not depend on existing technologies.
