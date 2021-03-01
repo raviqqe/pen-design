@@ -31,8 +31,8 @@ Make software development easier and faster!
 
 1. Language for command line tools
 1. Asynchronous operations
-1. Parallelism and concurrency support
 1. WASM backend
+1. Parallelism and concurrency support
 1. Language for HTTP servers
 1. Binary support
 1. General-purpose language
