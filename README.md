@@ -24,6 +24,7 @@ Make software development easier and faster!
 - Guided
   - Statically typed
   - Immutability
+  - No exception
   - Thread safe
 
 ## Product strategy
