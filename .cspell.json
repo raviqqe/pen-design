@@ -1,12 +1,3 @@
 {
-  "words": [
-    "contravariance",
-    "expresso",
-    "intercal",
-    "koka",
-    "libhandler",
-    "mlsub",
-    "stateful",
-    "subtyping"
-  ]
+  "words": ["contravariance", "performant", "subtyping", "wasm"]
 }

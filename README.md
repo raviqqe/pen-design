@@ -14,32 +14,43 @@ Make IT available everywhere!
 
 ## Product vision
 
-Make software development easier and faster!
+Make software development scalable for large organizations and over long terms!
 
 - Simple
-  - Easy to learn
+  - Functional
+  - Minimal
 - Testable
-  - Deterministic
-  - Dependency injection
+  - Purely functional by default
 - Guided
-  - Statically typed
-  - Immutability
+  - Static typing
+  - Immutable values
+  - No exception
+  - Thread safe
 
 ## Product strategy
 
-1. Language for command line tools
+1. Basic language features
+1. Capability-based side effects
+1. OS interface
+1. Asynchronous operations
+1. Performant GC
+1. Code formatter
+1. Foreign function interface
+1. WASM backend
+1. Efficient persistent data structures
+1. Testing tools
 1. Parallelism and concurrency support
-1. Language for HTTP servers
+1. HTTP server framework
 1. Binary support
-1. General-purpose language
+1. Web browser interface
+1. IDE/editor support
+   - Language server
+1. Internal DSL
 1. Self-hosting
 
 ## Product principles
 
 - Perfection is achieved when there is nothing to take away or add.
-- 1% demand does not matter.
-  - e.g. Go
-- Complexity can only be built upon simplicity.
-  - Application logics are complex!
-- Resemble but do not depend on existing technologies.
 - One way to do one thing
+- Complexity can only be built upon simplicity.
+- Mimic but do not depend on existing technologies.
