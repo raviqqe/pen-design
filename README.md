@@ -29,22 +29,24 @@ Make software development easier and faster!
 
 ## Product strategy
 
-1. Basic language features
-1. Capability-based side effects
-1. OS interface
-1. Asynchronous operations
-1. Performant GC
-1. Code formatter
-1. Foreign function interface
-1. WASM backend
-1. Efficient persistent data structures
-1. Testing tools
-1. Parallelism and concurrency support
-1. HTTP server framework
-1. Binary support
-1. Web browser interface
-1. Language server
-1. Self-hosting
+1. [ ] Basic language features
+1. [ ] Capability-based side effects
+1. [ ] OS interface
+1. [ ] Asynchronous operations
+1. [ ] Performant GC
+1. [ ] Code formatter
+1. [ ] Foreign function interface
+1. [ ] WASM backend
+1. [ ] Efficient persistent data structures
+1. [ ] Testing tools
+1. [ ] Parallelism and concurrency support
+1. [ ] HTTP server framework
+1. [ ] Binary support
+1. [ ] Web browser interface
+1. [ ] IDE/editor support
+   - Language server
+1. [ ] Internal DSL
+1. [ ] Self-hosting
 
 ## Product principles
 
