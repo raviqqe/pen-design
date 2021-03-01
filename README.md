@@ -29,15 +29,19 @@ Make software development easier and faster!
 
 ## Product strategy
 
-1. Language for command line tools
+1. Basic language features
+1. Capability-based side effects
+1. OS interface
 1. Asynchronous operations
-1. Portable GC
+1. Performant GC
+1. Code formatter
 1. WASM backend
 1. Efficient persistent data structures
 1. Parallelism and concurrency support
 1. Language for HTTP servers
 1. Binary support
-1. General-purpose language
+1. Web browser interface
+1. Language server
 1. Self-hosting
 
 ## Product principles
