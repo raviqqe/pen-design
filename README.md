@@ -38,6 +38,7 @@ Make software development easier and faster!
 1. Foreign function interface
 1. WASM backend
 1. Efficient persistent data structures
+1. Testing tools
 1. Parallelism and concurrency support
 1. HTTP server framework
 1. Binary support
