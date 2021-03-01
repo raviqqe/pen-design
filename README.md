@@ -14,7 +14,7 @@ Make IT available everywhere!
 
 ## Product vision
 
-Make software development easier and faster!
+Make software development scalable for large organizations and over long terms!
 
 - Simple
   - Functional
