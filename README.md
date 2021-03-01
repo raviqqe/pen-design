@@ -18,7 +18,7 @@ Make software development easier and faster!
 
 - Simple
   - Functional
-  - One way to do one thing
+  - Minimal
 - Testable
   - Deterministic
   - Purely functional by default
@@ -41,5 +41,6 @@ Make software development easier and faster!
 ## Product principles
 
 - Perfection is achieved when there is nothing to take away or add.
+- One way to do one thing
 - Complexity can only be built upon simplicity.
 - Mimic but do not depend on existing technologies.
