@@ -22,8 +22,8 @@ Make software development easier and faster!
 - Testable
   - Purely functional by default
 - Guided
-  - Statically typed
-  - Immutability
+  - Static typing
+  - Immutable values
   - No exception
   - Thread safe
 
