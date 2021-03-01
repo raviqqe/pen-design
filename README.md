@@ -21,7 +21,7 @@ Make software development easier and faster!
   - One way to do one thing
 - Testable
   - Deterministic
-  - Dependency injection
+  - Purely functional by default
 - Guided
   - Statically typed
   - Immutability
