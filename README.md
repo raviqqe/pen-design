@@ -3,6 +3,7 @@
 - [Syntax](syntax.md)
 - [Type system](type_system.md)
 - [Effect system](effect_system.md)
+- [Parallel computation](parallel_computation.md)
 - [Module system](module_system.md)
 - [Package system](package_system.md)
 - [Naming convention](naming_convention.md)
@@ -39,7 +40,7 @@ Make software development scalable for large organizations and over long terms!
 1. WASM backend
 1. Efficient persistent data structures
 1. Testing tools
-1. Parallelism and concurrency support
+1. Parallel computation support
 1. HTTP server framework
 1. Binary support
 1. Web browser interface
