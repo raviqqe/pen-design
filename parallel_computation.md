@@ -8,13 +8,13 @@ parallel.Parallel
 
 ## `~` operator
 
-### Ordered
+### Map
 
 ```
-xs ~ parallel.New(prl, concurrency)
+xs ~ parallel.Map(prl, concurrency)
 ```
 
-### Racing
+### Race
 
 ```
 xs ~ parallel.Race(prl, concurrency)
