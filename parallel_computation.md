@@ -3,11 +3,23 @@
 ## Parallel type
 
 ```
-parallel
+parallel.Parallel
 ```
 
-## Operators
+## `~` operator
+
+### Ordered
 
 ```
-parallel
+xs ~ parallel.New(prl, concurrency)
 ```
+
+### Racing
+
+```
+xs ~ parallel.Race(prl, concurrency)
+```
+
+### Split
+
+> WIP
