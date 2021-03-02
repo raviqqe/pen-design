@@ -40,7 +40,7 @@ Make software development scalable for large organizations and over long terms!
 1. WASM backend
 1. Efficient persistent data structures
 1. Testing tools
-1. Parallel computation support
+1. Parallel computation
 1. HTTP server framework
 1. Binary support
 1. Web browser interface
