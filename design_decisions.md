@@ -1,0 +1,34 @@
+# Design decisions
+
+## Single `number` type
+
+### Pros
+
+- Simple
+
+### Cons
+
+- Slow compared to integers
+  - We can optimize it later using NaN boxing.
+- Degraded type safety for integer values
+  - If we use wrapped operations for them, it may even safer to use real numbers.
+
+## No standard library written in foreign languages
+
+- If standard libraries are written in another language, both languages need to support all the backend.
+
+### Pros
+
+- Portability of the language and its standard library
+
+### Cons
+
+- Implementation of more algorithms and data structures
+  - e.g. KMP substring search
+
+## Inductive definitions of low-level values
+
+### Pros
+
+- No cyclic reference is needed.
+  - Reference counting is available.
