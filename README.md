@@ -7,6 +7,7 @@
 - [Module system](module_system.md)
 - [Package system](package_system.md)
 - [Naming convention](naming_convention.md)
+- [Design decisions](design_decisions.md)
 - [References](https://github.com/raviqqe/language-design)
 
 ## Mission statement
