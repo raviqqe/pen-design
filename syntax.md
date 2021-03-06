@@ -62,8 +62,8 @@ size(xs)
 ### Streams
 
 ```
-<<>>
-<<x, ...xs>>
+<>
+<x, ...xs>
 ```
 
 ### Maps
@@ -140,7 +140,7 @@ if x is number {
 #### Streams
 
 ```
-if <<x, ...xs>> = xs {
+if <x, ...xs> = xs {
   ...
 } else {
   ...

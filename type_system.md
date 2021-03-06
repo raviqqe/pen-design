@@ -30,7 +30,7 @@ string
 ## Streams
 
 ```
-<<a>>
+<a>
 ```
 
 ## Maps
