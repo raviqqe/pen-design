@@ -34,12 +34,6 @@ none
 "string"
 ```
 
-#### String length
-
-```
-"string".size
-```
-
 ### Functions
 
 #### Calls
@@ -62,7 +56,6 @@ f(x, y)
 [1, 2, 3]
 [x, ...xs]
 xs[42] # ... | error
-xs.size
 ```
 
 ### Streams
@@ -78,7 +71,6 @@ xs.size
 {"foo": "bar"}
 {...xs, "foo": "bar"}
 xs["foo"] # ... | error
-xs.size
 ```
 
 ### Records
