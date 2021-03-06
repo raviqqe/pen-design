@@ -34,6 +34,12 @@ none
 "string"
 ```
 
+#### String length
+
+```
+"string".size
+```
+
 ### Functions
 
 #### Calls
