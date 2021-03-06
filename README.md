@@ -2,6 +2,7 @@
 
 - [Syntax](syntax.md)
 - [Type system](type_system.md)
+- [Built-in functions](built_in_functions.md)
 - [Effect system](effect_system.md)
 - [Parallel computation](parallel_computation.md)
 - [Module system](module_system.md)
