@@ -56,7 +56,6 @@ f(x, y)
 [1, 2, 3]
 [x, ...xs]
 xs[42] # ... | error
-size(xs)
 ```
 
 ### Streams
@@ -72,7 +71,6 @@ size(xs)
 {"foo": "bar"}
 {...xs, "foo": "bar"}
 xs["foo"] # ... | error
-size(xs)
 ```
 
 ### Records
