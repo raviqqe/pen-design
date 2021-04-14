@@ -44,11 +44,12 @@ Make software development scalable for large organizations and over long terms!
 1. Testing tools
 1. Parallel computation
 1. HTTP server framework
-1. Binary support
 1. Web browser interface
 1. IDE/editor support
    - Language server
 1. Internal DSL
+   - Atomic mutable state
+1. Binary support
 1. Self-hosting
 
 ## Product principles
