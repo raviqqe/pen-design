@@ -2,16 +2,19 @@
 
 ## Package configuration files
 
-### Command
+### Application
 
 ```json
 {
-  "target": {
-    "type": "Command",
-    "name": "foo"
+  "application": {
+    "name": "foo",
+    "system": {
+      "name": "github.com/ein-lang/os",
+      "version": "main"
+    }
   },
   "dependencies": {
-    "github.com/bar/baz": { "version": "master" }
+    "github.com/foo/bar": { "version": "main" }
   }
 }
 ```
@@ -20,11 +23,8 @@
 
 ```json
 {
-  "target": {
-    "type": "Library"
-  },
   "dependencies": {
-    "github.com/bar/baz": { "version": "master" }
+    "github.com/foo/bar": { "version": "main" }
   }
 }
 ```
