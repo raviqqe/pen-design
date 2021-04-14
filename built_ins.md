@@ -9,8 +9,6 @@
 1 - 1
 1 * 1
 1 / 1
-1 % 1
-- 1
 ```
 
 ### Comparison
@@ -27,9 +25,9 @@
 ### Boolean
 
 ```
-true && true
-true || true
-! true
+true & true
+true | true
+not(true)
 ```
 
 ### Pipe
