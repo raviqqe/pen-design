@@ -3,7 +3,7 @@
 ## Parallel type
 
 ```
-parallel.Parallel
+Parallel.Parallel
 ```
 
 ## `~` operator
@@ -11,15 +11,19 @@ parallel.Parallel
 ### Map
 
 ```
-xs ~ parallel.Map(prl, concurrency)
+xs ~ Parallel.Map(prl, concurrency) # <...>
 ```
 
 ### Race
 
 ```
-xs ~ parallel.Race(prl, concurrency)
+xs ~ Parallel.Race(prl, concurrency) # <...>
 ```
 
 ### Split
 
 > WIP
+
+```
+xs ~ Parallel.Split(prl, concurrency) # <<...>>
+```

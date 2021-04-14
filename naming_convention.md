@@ -13,16 +13,10 @@
   - `i` for `index`
   - `c` for `requestCount`
 
-## Modules
+## Module files and directories
 
-- Snake case
-  - `foo_bar`
-
-## Module directories
-
-- Lower case without any sign
-  - `foobar`
-- Follow [Go's convention](https://blog.golang.org/package-names).
+- Upper camel case
+  - `FooBar`
 
 ## Packages
 
