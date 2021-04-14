@@ -33,7 +33,7 @@ not(true)
 ### Pipe
 
 ```
-... |> f(x, y)
+... |> f(x, y, _)
 ```
 
 is equivalent to:
