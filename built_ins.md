@@ -44,10 +44,22 @@ f(x, y, ...)
 
 ## Functions
 
+### Collections
+
+```
+size : \(string | array | map) number
+```
+
+### Maps
+
+```
+delete : \(map, string) map
+include : \(map, string) boolean
+```
+
+### Others
+
 ```
 debug : \(any) none
-delete : \(map, any) boolean
 error : \(any) error
-include : \(map, any) boolean
-size : \(string | array | map) boolean
 ```
