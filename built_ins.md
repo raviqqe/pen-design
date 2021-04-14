@@ -32,6 +32,18 @@ true || true
 ! true
 ```
 
+### Pipe
+
+```
+... |> f(x, y)
+```
+
+is equivalent to:
+
+```
+f(x, y, ...)
+```
+
 ## Functions
 
 ```
