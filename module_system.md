@@ -18,20 +18,20 @@ type Foo {
 ## Import
 
 ```
-import "github.com/foo/foo"
+import "github.com/foo/foo/Foo"
 
-x = foo.Foo
+x = Foo.Foo
 ```
 
 ### Referencing
 
-- A repository name + an optional directory name
-  - e.g. `github.com/foo/bar/baz` for a `baz` directory in a `github.com/foo/bar` repository
+- A repository name + a file basename
+  - e.g. `github.com/foo/bar/Baz` for a `Baz.pen` file in a `github.com/foo/bar` repository
 
 ### Custom prefixes
 
 ```
-import bar "github.com/foo/foo"
+import Bar "github.com/foo/foo/Foo"
 
-x = bar.Foo
+x = Bar.Foo
 ```
