@@ -46,15 +46,20 @@ f(x, y, ...)
 
 ### Collections
 
+- Collections include strings, arrays and maps.
+- Key types depend on collection types.
+  - Number for strings and arrays
+  - Non-function type for maps
+
 ```
-size : \(string | array | map) number
+delete : \(collection, key) map
+size : \(collection) number
 ```
 
 ### Maps
 
 ```
-delete : \(map, string) map
-include : \(map, string) boolean
+include : \(map, key) boolean
 ```
 
 ### Others
