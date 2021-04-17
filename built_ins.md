@@ -47,7 +47,7 @@ f(x, y, ...)
 ### Collections
 
 ```
-delete : \(array, number) array
+insert : \(map, key, value) map
 delete : \(map, key) map
 size : \(array) number
 size : \(map) number
