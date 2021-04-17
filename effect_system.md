@@ -1,6 +1,6 @@
 # Effect system
 
-- Impure functions are injected only as arguments to functions.
+- Side effects are injected only as arguments to functions.
 
 ## Effects
 
@@ -8,6 +8,7 @@
   - File system
   - Network
   - Clock
+  - Random
 - Parameters
   - Command-line arguments
   - Environment variables
