@@ -36,7 +36,7 @@ not(true)
 ... |> f(x, y, _)
 ```
 
-is equivalent to:
+is equivalent to
 
 ```
 f(x, y, ...)
