@@ -2,7 +2,7 @@
 
 ## Export
 
-- Capitalize names.
+Capitalize names.
 
 ```
 Foo = ...
