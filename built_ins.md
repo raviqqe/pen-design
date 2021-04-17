@@ -46,8 +46,6 @@ f(x, y, ...)
 
 ### Collections
 
-- Collections include arrays and maps.
-
 ```
 delete : \(array, number) array
 delete : \(map, key) map
