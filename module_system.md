@@ -20,7 +20,7 @@ type Foo {
 ```
 import "github.com/foo/foo/Foo"
 
-x = Foo.Bar
+x = Foo.Foo
 ```
 
 ### Custom prefix
