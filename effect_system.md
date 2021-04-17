@@ -1,6 +1,6 @@
 # Effect system
 
-- Impure functions are injected only as arguments to functions.
+- Side effects are injected only as arguments to functions.
 
 ## Effects
 
@@ -8,6 +8,7 @@
   - File system
   - Network
   - Clock
+  - Random
 - Parameters
   - Command-line arguments
   - Environment variables
@@ -27,12 +28,12 @@ main = \(os Os) none | error {
 
 ```
 type Os {
-  arguments [string]
-  environmentVariables [string]
+  Arguments [string]
+  EnvironmentVariables [string]
 
-  openFile \(string, FileMode) File | error
-  readFile \(File) string | error
-  writeFile \(File, string) none | error
+  OpenFile \(string, FileMode) File | error
+  ReadFile \(File) string | error
+  WriteFile \(File, string) none | error
   ...
 }
 ```

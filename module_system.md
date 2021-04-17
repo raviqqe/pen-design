@@ -23,6 +23,16 @@ import "github.com/foo/foo/Foo"
 x = Foo.Foo
 ```
 
+### Prefix omission
+
+Prefixes can be omitted if their names are the same as exported names.
+
+```
+import "github.com/foo/foo/Foo"
+
+x = Foo
+```
+
 ### Referencing
 
 - A repository name + a file basename

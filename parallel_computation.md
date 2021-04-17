@@ -3,27 +3,16 @@
 ## Parallel type
 
 ```
-Parallel.Parallel
+type Parallel {
+  Map : \(number) MapContext
+  Race : \(number) RaceContext
+  Split : \(number) SplitContext
+  ...
+}
 ```
 
 ## `~` operator
 
-### Map
-
 ```
-xs ~ Parallel.Map(prl, concurrency) # <...>
-```
-
-### Race
-
-```
-xs ~ Parallel.Race(prl, concurrency) # <...>
-```
-
-### Split
-
-> WIP
-
-```
-xs ~ Parallel.Split(prl, concurrency) # <<...>>
+xs ~ parallel.Map(concurrency)
 ```
