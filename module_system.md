@@ -2,7 +2,7 @@
 
 ## Export
 
-- Capitalize names.
+Capitalize names.
 
 ```
 Foo = ...
@@ -23,9 +23,23 @@ import "github.com/foo/foo/Foo"
 x = Foo.Foo
 ```
 
-### Prefix omission
+### Custom prefix
 
-Prefixes can be omitted if their names are the same as exported names.
+```
+import Bar "github.com/foo/foo/Foo"
+
+x = Bar.Foo
+```
+
+### Prefix shorthand
+
+```
+import "github.com/foo/foo/Foo"
+
+x = Foo.Foo
+```
+
+is equivalent to
 
 ```
 import "github.com/foo/foo/Foo"
@@ -33,15 +47,7 @@ import "github.com/foo/foo/Foo"
 x = Foo
 ```
 
-### Referencing
+### Module reference
 
 - A repository name + a file basename
   - e.g. `github.com/foo/bar/Baz` for a `Baz.pen` file in a `github.com/foo/bar` repository
-
-### Custom prefixes
-
-```
-import Bar "github.com/foo/foo/Foo"
-
-x = Bar.Foo
-```
