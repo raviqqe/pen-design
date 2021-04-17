@@ -70,10 +70,19 @@ foo | bar
 any
 ```
 
+## Never
+
+- The bottom type
+- For `?` operator on `error` type
+
+```
+never
+```
+
 ## Error
 
 ```
 type error {
-  source any
+  cause any
 }
 ```
