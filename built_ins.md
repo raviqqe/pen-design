@@ -46,20 +46,13 @@ f(x, y, ...)
 
 ### Collections
 
-- Collections include strings, arrays and maps.
-- Key types depend on collection types.
-  - Number for strings and arrays
-  - Non-function type for maps
+- Collections include arrays and maps.
 
 ```
-delete : \(collection, key) map
-size : \(collection) number
-```
-
-### Maps
-
-```
-include : \(map, key) boolean
+delete : \(array, number) array
+delete : \(map, key) map
+size : \(array) number
+size : \(map) number
 ```
 
 ### Others
