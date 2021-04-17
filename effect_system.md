@@ -28,12 +28,12 @@ main = \(os Os) none | error {
 
 ```
 type Os {
-  arguments [string]
-  environmentVariables [string]
+  Arguments [string]
+  EnvironmentVariables [string]
 
-  openFile \(string, FileMode) File | error
-  readFile \(File) string | error
-  writeFile \(File, string) none | error
+  OpenFile \(string, FileMode) File | error
+  ReadFile \(File) string | error
+  WriteFile \(File, string) none | error
   ...
 }
 ```
