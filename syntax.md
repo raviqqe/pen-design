@@ -145,3 +145,44 @@ if <x, ...xs> = xs {
   ...
 }
 ```
+
+### Operators
+
+#### Arithmetic
+
+```
+1 + 1
+1 - 1
+1 * 1
+1 / 1
+```
+
+#### Comparison
+
+```
+1 == 1
+1 /= 1
+1 < 1
+1 > 1
+1 <= 1
+1 >= 1
+```
+
+#### Boolean
+
+```
+true & true
+true | true
+```
+
+#### Pipe
+
+```
+... |> f(x, y, _)
+```
+
+is equivalent to
+
+```
+f(x, y, ...)
+```
