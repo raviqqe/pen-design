@@ -64,7 +64,7 @@ foo | bar
 
 ## Any
 
-- The top type
+The top type
 
 ```
 any
@@ -72,7 +72,7 @@ any
 
 ## Never
 
-- The bottom type
+The bottom type
 
 ```
 never
