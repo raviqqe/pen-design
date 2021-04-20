@@ -8,13 +8,6 @@ Capitalize names.
 Foo = ...
 ```
 
-```
-type Foo {
-  Bar number
-  ...
-}
-```
-
 ## Import
 
 ```
