@@ -59,19 +59,19 @@ xs[42] # ... | error
 xs[2...4]
 ```
 
-### Streams
-
-```
-<>
-<x, ...xs>
-```
-
 ### Maps
 
 ```
 {"foo": "bar"}
 {...xs, "foo": "bar"}
 xs["foo"] # ... | error
+```
+
+### Streams
+
+```
+<>
+<x, ...xs>
 ```
 
 ### Records

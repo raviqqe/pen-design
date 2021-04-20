@@ -27,18 +27,18 @@ string
 [a]
 ```
 
-## Streams
-
-```
-<a>
-```
-
 ## Maps
 
 - Keys cannot be functions, `any` or any other types including them.
 
 ```
 {a: b}
+```
+
+## Streams
+
+```
+<a>
 ```
 
 ## Records
