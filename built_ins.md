@@ -50,8 +50,8 @@ f(x, y, ...)
 delete : \(map, key) map
 size : \(array) number
 size : \(map) number
-iterate : \(array) stream
-iterate : \(map) stream
+iterate : \(array) <element>
+iterate : \(map) <key>
 ```
 
 ### Others
