@@ -29,7 +29,6 @@ See [Module system](module_system.md).
 ```
 false
 true
-none
 -12.3
 "string"
 ```
@@ -46,6 +45,14 @@ f(x, y)
 
 ```
 \(x boolean, y number) string {
+  ...
+}
+```
+
+##### With errors
+
+```
+\(x boolean, y number) ! string {
   ...
 }
 ```
@@ -122,14 +129,12 @@ if x {
 }
 ```
 
-#### Unions and `any`
+#### Variants
 
 ```
-x = ...
-
-if x is number {
+if x is foo(foo) {
   ...
-} else if string | none {
+} else if bar {
   ...
 } else {
   ...

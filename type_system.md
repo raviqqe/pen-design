@@ -1,8 +1,6 @@
 # Type system
 
 - Nominal typing
-- Subtyping
-  - No covariance or contravariance
 - Restricted polymorphism
 - Unidirectional type inference
 
@@ -10,7 +8,6 @@
 
 ```
 boolean
-none
 number
 string
 ```
@@ -44,22 +41,25 @@ string
 ## Records
 
 ```
-type person {
+record person {
   name string
   age  number
 }
 ```
 
-### Without fields
+## Variants
 
 ```
-type foo
+variant foo {
+  bar(bar)
+  baz
+}
 ```
 
-## Union types
+## Options
 
 ```
-foo | bar
+a?
 ```
 
 ## Any
@@ -73,7 +73,6 @@ any
 ## Never
 
 - The bottom type
-- For `?` operator on `error` type
 
 ```
 never
@@ -82,7 +81,7 @@ never
 ## Error
 
 ```
-type error {
+record error {
   cause any
 }
 ```
