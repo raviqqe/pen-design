@@ -73,7 +73,6 @@ any
 ## Never
 
 - The bottom type
-- For `?` operator on `error` type
 
 ```
 never
