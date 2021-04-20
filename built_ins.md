@@ -9,13 +9,14 @@
 1 - 1
 1 * 1
 1 / 1
+-1
 ```
 
 ### Comparison
 
 ```
 1 == 1
-1 /= 1
+1 != 1
 1 < 1
 1 > 1
 1 <= 1
@@ -27,7 +28,7 @@
 ```
 true & true
 true | true
-not(true)
+!true
 ```
 
 ### Pipe
