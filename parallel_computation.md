@@ -4,9 +4,9 @@
 
 ```
 type Parallel {
-  Map : \(number) MapContext
-  Race : \(number) RaceContext
-  Split : \(number) SplitContext
+  Map : \(number) Map
+  Race : \(number) Race
+  Split : \(number) Split
   ...
 }
 ```
