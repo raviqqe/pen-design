@@ -11,7 +11,7 @@ Foo = ...
 ## Import
 
 ```
-import "github.com/foo/foo/Foo"
+import foo.Foo
 
 x = Foo.Foo
 ```
@@ -19,18 +19,18 @@ x = Foo.Foo
 ### Local modules
 
 ```
-import "/Foo/Bar"
+import .Foo.Bar
 ```
 
 ### Custom prefix
 
 ```
-import Bar "github.com/foo/foo/Foo"
+import foo.Foo as Bar
 
 x = Bar.Foo
 ```
 
 ### Module reference
 
-- A repository name + a file basename
-  - e.g. `github.com/foo/bar/Baz` for a `Baz.pen` file in a `github.com/foo/bar` repository
+- A package name and a module path
+  - e.g. `foo.Bar.Baz` for a `Baz.pen` file in a `Bar` directory in a `foo` package
