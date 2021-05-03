@@ -16,6 +16,12 @@ import "github.com/foo/foo/Foo"
 x = Foo.Foo
 ```
 
+### Local modules
+
+```
+import "/Foo/Bar"
+```
+
 ### Custom prefix
 
 ```
