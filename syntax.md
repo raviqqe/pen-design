@@ -52,6 +52,8 @@ f(x, y)
 
 ### Lists
 
+- Elements are evaluated lazily.
+
 ```
 [number; 1, 2, 3]
 [Foo; x, ...xs]
