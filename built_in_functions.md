@@ -1,8 +1,8 @@
 # Built-in functions
 
 ```
-not : \(boolean) boolean
+not \(boolean) boolean
 
-error : \(any) error
-debug : \(any) none
+error \(any) error
+debug \(any) none
 ```
