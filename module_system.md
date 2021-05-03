@@ -14,7 +14,6 @@ Foo = ...
 import "github.com/foo/foo/Foo"
 
 x = Foo.Foo
-y = Foo
 ```
 
 ### Custom prefix
