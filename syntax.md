@@ -87,24 +87,6 @@ if x {
 }
 ```
 
-##### Without `else`
-
-```
-if x {
-  ...
-}
-```
-
-is equivalent to
-
-```
-if x {
-  ...
-} else {
-  none
-}
-```
-
 #### Unions and `any`
 
 ```
@@ -156,16 +138,4 @@ if [x, ...xs] = xs {
 ```
 true & true
 true | true
-```
-
-#### Pipe
-
-```
-... |> f(x, y, _)
-```
-
-is equivalent to
-
-```
-f(x, y, ...)
 ```
