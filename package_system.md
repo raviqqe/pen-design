@@ -6,15 +6,15 @@
 
 ```json
 {
-  "application": {
-    "name": "foo",
-    "system": {
-      "name": "github.com/ein-lang/os",
-      "version": "main"
-    }
-  },
   "dependencies": {
-    "github.com/foo/bar": { "version": "main" }
+    "Foo": {
+      "type": "git",
+      "url": "github.com/foo/foo"
+    },
+    "System": {
+      "type": "git",
+      "url": "github.com/foo/system"
+    }
   }
 }
 ```
@@ -24,7 +24,10 @@
 ```json
 {
   "dependencies": {
-    "github.com/foo/bar": { "version": "main" }
+    "Foo": {
+      "type": "git",
+      "url": "github.com/foo/foo"
+    }
   }
 }
 ```
