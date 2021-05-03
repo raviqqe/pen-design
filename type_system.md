@@ -42,7 +42,7 @@ type person {
 type foo
 ```
 
-## Union types
+## Unions
 
 ```
 foo | bar
