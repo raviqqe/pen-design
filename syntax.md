@@ -54,7 +54,7 @@ f(x, y)
 
 ```
 [number; 1, 2, 3]
-[foo; x, ...xs]
+[Foo; x, ...xs]
 ```
 
 ### Records
