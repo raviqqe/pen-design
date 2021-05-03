@@ -13,12 +13,7 @@
   - `i` for `index`
   - `c` for `requestCount`
 
-## Module files and directories
+## Packages and module files and directories
 
 - Upper camel case
   - `FooBar`
-
-## Packages
-
-- Kebab case
-  - `github.com/foo-bar/baz-blah`

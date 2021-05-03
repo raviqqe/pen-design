@@ -1,18 +1,17 @@
 # Parallel computation
 
-## Parallel type
+## Functions
 
 ```
-type Parallel {
-  Map : \(number) Map
-  Race : \(number) Race
-  Split : \(number) Split
-  ...
-}
+Map \(Parallel) Map
+Race \(Parallel) Race
+Split \(Parallel) Split
+
+...
 ```
 
 ## `~` operator
 
 ```
-xs ~ parallel.Map(concurrency)
+xs ~ Map(prl)
 ```

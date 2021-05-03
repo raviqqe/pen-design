@@ -21,24 +21,10 @@ string
 \(a, b) c
 ```
 
-## Arrays
+## Lists
 
 ```
 [a]
-```
-
-## Maps
-
-- Keys cannot be functions, `any` or any other types including them.
-
-```
-{a: b}
-```
-
-## Streams
-
-```
-<a>
 ```
 
 ## Records
@@ -68,14 +54,6 @@ The top type
 
 ```
 any
-```
-
-## Never
-
-The bottom type
-
-```
-never
 ```
 
 ## Error

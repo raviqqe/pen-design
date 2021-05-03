@@ -50,28 +50,11 @@ f(x, y)
 }
 ```
 
-### Arrays
+### Lists
 
 ```
-[1, 2, 3]
-[x, ...xs]
-xs[42] # ... | error
-xs[2...4]
-```
-
-### Maps
-
-```
-{"foo": "bar"}
-{...xs, "foo": "bar"}
-xs["foo"] # ... | error
-```
-
-### Streams
-
-```
-<>
-<x, ...xs>
+[number; 1, 2, 3]
+[Foo; x, ...xs]
 ```
 
 ### Records
@@ -104,30 +87,12 @@ if x {
 }
 ```
 
-##### Without `else`
-
-```
-if x {
-  ...
-}
-```
-
-is equivalent to
-
-```
-if x {
-  ...
-} else {
-  none
-}
-```
-
 #### Unions and `any`
 
 ```
 x = ...
 
-if x is number {
+if x as number {
   ...
 } else if string | none {
   ...
@@ -136,10 +101,10 @@ if x is number {
 }
 ```
 
-#### Streams
+#### Lists
 
 ```
-if <x, ...xs> = xs {
+if [x, ...xs] = xs {
   ...
 } else {
   ...
@@ -173,16 +138,4 @@ if <x, ...xs> = xs {
 ```
 true & true
 true | true
-```
-
-#### Pipe
-
-```
-... |> f(x, y, _)
-```
-
-is equivalent to
-
-```
-f(x, y, ...)
 ```
