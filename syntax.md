@@ -50,28 +50,11 @@ f(x, y)
 }
 ```
 
-### Arrays
+### Lists
 
 ```
-[1, 2, 3]
-[x, ...xs]
-xs[42] # ... | error
-xs[2...4]
-```
-
-### Maps
-
-```
-{"foo": "bar"}
-{...xs, "foo": "bar"}
-xs["foo"] # ... | error
-```
-
-### Streams
-
-```
-<>
-<x, ...xs>
+[number; 1, 2, 3]
+[foo; x, ...xs]
 ```
 
 ### Records
@@ -136,10 +119,10 @@ if x is number {
 }
 ```
 
-#### Streams
+#### Lists
 
 ```
-if <x, ...xs> = xs {
+if [x, ...xs] = xs {
   ...
 } else {
   ...
