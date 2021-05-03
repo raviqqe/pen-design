@@ -56,14 +56,6 @@ The top type
 any
 ```
 
-## Never
-
-The bottom type
-
-```
-never
-```
-
 ## Error
 
 ```
