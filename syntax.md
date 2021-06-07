@@ -72,7 +72,7 @@ person{...x, name: "foo"}
 - For `... | error` types
 
 ```
-x?
+?x
 ```
 
 ### Conditionals
@@ -128,7 +128,7 @@ if [x, ...xs] = xs {
 
 ```
 1 == 1
-1 /= 1
+1 != 1
 1 < 1
 1 > 1
 1 <= 1
@@ -138,6 +138,7 @@ if [x, ...xs] = xs {
 #### Boolean
 
 ```
+!true
 true & true
 true | true
 ```
