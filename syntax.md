@@ -92,9 +92,7 @@ if x {
 #### Unions and `any`
 
 ```
-x = ...
-
-if x as number {
+if x = ...; number {
   ...
 } else if string | none {
   ...
