@@ -1,44 +1,35 @@
 # Parallel computation
 
-## Functions
-
-```
-Map \(Parallel) Map
-Race \(Parallel) Race
-Split \(Parallel) Split
-Join \(Parallel) Join
-```
-
 ## Operations
 
-### `\() T -> \() T`
+### Spawn
+
+- `\() T -> \() T`
 
 ```pen
 ctx ~ \() number { 42 }
 ```
 
-### `[T] -> [T]`
+### Map
 
-- `Map`
-- `Race`
-  - Equivalent to `Split` and `Join`
+- `[T] -> [T]`
 
 ```pen
 ctx ~~ [number 42]
 ```
 
-### `[T] -> [[T]]`
+### Split
 
-- `Split`
+- `[T] -> [[T]]`
 
 ```pen
 ctx ~< [number 42]
 ```
 
-### `[[T]] -> [T]`
+### Join
 
-- `Join`
+- `[[T]] -> [T]`
 
 ```pen
-ctx ~> [number 42]
+ctx ~> [[number] [number 42], [number 42]]
 ```
