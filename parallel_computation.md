@@ -4,7 +4,8 @@
 
 ### Spawn
 
-- `\() T -> \() T`
+- Semantics: `\() T -> \() T`
+- Implemented as `\(\() any) \() any`
 
 ```pen
 ctx ~ \() number { 42 }
@@ -12,7 +13,8 @@ ctx ~ \() number { 42 }
 
 ### Map
 
-- `[T] -> [T]`
+- Semantics: `[T] -> [T]`
+- Implemented as `\([any]) [any]`
 
 ```pen
 ctx ~~ [number 42]
@@ -20,7 +22,7 @@ ctx ~~ [number 42]
 
 ### Join
 
-- `[[T]] -> [T]`
+- Semantics: `[[T]] -> [T]`
 - It represents the "race" operation too.
 
 ```pen
