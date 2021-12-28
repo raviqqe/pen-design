@@ -8,16 +8,7 @@
 - Implemented as `\(\() any) \() any`
 
 ```pen
-ctx ~ \() number { 42 }
-```
-
-### Map
-
-- Semantics: `[T] -> [T]`
-- Implemented as `\([any]) [any]`
-
-```pen
-ctx ~~ [number 42]
+f = async \() number { 42 }
 ```
 
 ### Join
