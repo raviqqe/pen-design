@@ -1,17 +1,30 @@
 # Parallel computation
 
-## Functions
+## Operations
 
+### Spawn
+
+- Semantics: `\() T -> \() T`
+- Implemented as `\(\() any) \() any`
+
+```pen
+ctx ~ \() number { 42 }
 ```
-Map \(Parallel) Map
-Race \(Parallel) Race
-Split \(Parallel) Split
 
-...
+### Map
+
+- Semantics: `[T] -> [T]`
+- Implemented as `\([any]) [any]`
+
+```pen
+ctx ~~ [number 42]
 ```
 
-## `~` operator
+### Join
 
-```
-xs ~ Map(prl)
+- Semantics: `[[T]] -> [T]`
+- It represents the "race" operation too.
+
+```pen
+ctx ~> [[number] [number 42], [number 42]]
 ```
