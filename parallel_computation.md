@@ -18,7 +18,7 @@ It can represent the following kinds of parallel computation.
 - Implemented as `\(\() any) \() any`
 
 ```pen
-f = async \() number { 42 }
+f = go \() number { 42 }
 ```
 
 ### Join
@@ -27,5 +27,5 @@ f = async \() number { 42 }
 - Implemented as `\([[any]]) [any]`
 
 ```pen
-xs = async [[number] [number 42], [number 42]]
+xs = go [[number] [number 42], [number 42]]
 ```
