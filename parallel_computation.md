@@ -8,7 +8,7 @@ It can represent the following kinds of parallel computation.
 - Race
 - Join
 - Split
-  - Might not be useful with sophisticated runtime
+  - Might not be necessary with sophisticated runtime
 
 ## Operations
 
