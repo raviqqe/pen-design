@@ -18,14 +18,6 @@ ctx ~ \() number { 42 }
 ctx ~~ [number 42]
 ```
 
-### Split
-
-- `[T] -> [[T]]`
-
-```pen
-ctx ~< [number 42]
-```
-
 ### Join
 
 - `[[T]] -> [T]`
