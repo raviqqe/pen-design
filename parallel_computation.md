@@ -1,5 +1,14 @@
 # Parallel computation
 
+## Requirements
+
+It can represent the following kinds of parallel computation.
+
+- Map
+- Race
+- Join
+- Split (?)
+
 ## Operations
 
 ### Spawn
