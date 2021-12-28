@@ -25,7 +25,6 @@ f = async \() number { 42 }
 
 - Semantics: `[[T]] -> [T]`
 - Implemented as `\([[any]]) [any]`
-- It represents the "race" operation too.
 
 ```pen
 xs = async [[number] [number 42], [number 42]]
